@@ -23,6 +23,8 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import io.swagger.annotations.ApiModelProperty;
+
 
 @Entity
 @Table(name="Customer")
@@ -41,8 +43,10 @@ public class Customer {
 	@Column(name="DOB")
 	private LocalDate dob;
 	@Column(name="Email",nullable = false,length = 150)
+	@ApiModelProperty(example = "sample@gmail.com")	
 	private String email;
 	@Column(name="Mobile_No")
+	@ApiModelProperty(example = "111111111")	
 	private long mobileNo;
 
 	
