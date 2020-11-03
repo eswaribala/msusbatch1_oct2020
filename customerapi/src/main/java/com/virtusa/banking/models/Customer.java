@@ -24,10 +24,12 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 
 @Entity
 @Table(name="Customer")
+@Data
 public class Customer {
 	
 	@Id
@@ -58,48 +60,5 @@ public class Customer {
 	  @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY) private
 	  List<Address> addressList;
 	 
-	public long getCustomerId() {
-		return customerId;
-	}
-	public void setCustomerId(long customerId) {
-		this.customerId = customerId;
-	}
-	public FullName getName() {
-		return name;
-	}
-	public void setName(FullName name) {
-		this.name = name;
-	}
-	public Gender getGender() {
-		return gender;
-	}
-	public void setGender(Gender gender) {
-		this.gender = gender;
-	}
-	public LocalDate getDob() {
-		return dob;
-	}
-	public void setDob(LocalDate dob) {
-		this.dob = dob;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public long getMobileNo() {
-		return mobileNo;
-	}
-	public void setMobileNo(long mobileNo) {
-		this.mobileNo = mobileNo;
-	}
-	
-	  public List<Address> getAddressList() { return addressList; } public void
-	  setAddressList(List<Address> addressList) { this.addressList = addressList; }
-	 
-	
-	
-	
 
 }

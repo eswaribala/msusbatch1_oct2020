@@ -14,9 +14,12 @@ import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.Data;
+
 
 @Entity
 @Table(name="Address")
+@Data
 public class Address {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,42 +37,5 @@ public class Address {
 	@JoinColumn(foreignKey = @ForeignKey(name = "Customer_Id"), name = "Customer_Id")
 	@JsonIgnore
 	private Customer customer;
-	
-	public String getDoorNo() {
-		return doorNo;
-	}
-	public void setDoorNo(String doorNo) {
-		this.doorNo = doorNo;
-	}
-	public String getStreetName() {
-		return streetName;
-	}
-	public void setStreetName(String streetName) {
-		this.streetName = streetName;
-	}
-	public String getCity() {
-		return city;
-	}
-	public void setCity(String city) {
-		this.city = city;
-	}
-	public String getState() {
-		return state;
-	}
-	public void setState(String state) {
-		this.state = state;
-	}
-	public long getAddressId() {
-		return addressId;
-	}
-	public void setAddressId(long addressId) {
-		this.addressId = addressId;
-	}
-	public Customer getCustomer() {
-		return customer;
-	}
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
-	}
-	
+		
 }
