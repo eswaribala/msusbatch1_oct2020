@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,6 +28,7 @@ import com.virtusa.banking.models.Customer;
 import com.virtusa.banking.services.CustomerService;
 
 @RestController
+
 public class CustomerController {
     @Autowired
 	private CustomerService customerService;
@@ -42,7 +47,10 @@ public class CustomerController {
     	
     }
     
-    @GetMapping("/customers")
+    @RequestMapping(value = "/customers", 
+    		  produces = { "application/json", "application/xml" }, 
+    		  method = RequestMethod.GET)
+
     @CrossOrigin("*")
     public List<Customer> findAllCustomers()
     {
@@ -135,7 +143,13 @@ public class CustomerController {
     	}
 
 	}
-    
-    
+    //3E greater than
+   // http://localhost:7070/customers/rsql?condition=customerId%3E2;gender==FEMALE
+    @GetMapping("/customers/rsql")
+    public Page<Customer> query(@RequestParam String condition,
+                                @RequestParam(required = false,defaultValue = "0") int page,
+                                @RequestParam(required = false,defaultValue = "20") int size){
+        return customerService.query(condition,PageRequest.of(page,size));
+    }
     
 }

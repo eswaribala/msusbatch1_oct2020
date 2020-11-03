@@ -6,7 +6,7 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,6 +20,7 @@ import lombok.Data;
 @Entity
 @Table(name="Address")
 @Data
+@XmlRootElement
 public class Address {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

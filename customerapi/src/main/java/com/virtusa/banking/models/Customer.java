@@ -16,6 +16,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
@@ -30,6 +31,7 @@ import lombok.Data;
 @Entity
 @Table(name="Customer")
 @Data
+@XmlRootElement
 public class Customer {
 	
 	@Id
