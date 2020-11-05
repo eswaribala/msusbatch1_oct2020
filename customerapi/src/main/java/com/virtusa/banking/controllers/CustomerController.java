@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
@@ -24,26 +28,32 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.bohnman.squiggly.Squiggly;
 import com.github.bohnman.squiggly.util.SquigglyUtils;
+import com.virtusa.banking.exceptions.MobileNoException;
+import com.virtusa.banking.exceptions.RecordNotFoundException;
 import com.virtusa.banking.models.Customer;
 import com.virtusa.banking.services.CustomerService;
 
-@RestController
+import lombok.extern.slf4j.Slf4j;
 
+@RestController
+@Slf4j
+@RefreshScope
 public class CustomerController {
     @Autowired
 	private CustomerService customerService;
-    
+    @Value("${message}")
+    private String message;
     //postmapping
     @PostMapping("/customers")
     @CrossOrigin("*")
-    public ResponseEntity<?> addCustomer(@RequestBody Customer customer)
+    public ResponseEntity<?> addCustomer(@Valid @RequestBody Customer customer)
     {
-    	if(customerService.addCustomer(customer)!=null)
-    	{
-    		return ResponseEntity.status(HttpStatus.ACCEPTED).body(customerService.addCustomer(customer));
-    	}
-    	else
-    		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Customer Not Added");
+    	
+    	Customer customerObj=customerService.addCustomer(customer);
+    	
+    	
+    	return ResponseEntity.status(HttpStatus.ACCEPTED).body(customerObj);
+    	
     	
     }
     
@@ -54,7 +64,7 @@ public class CustomerController {
     @CrossOrigin("*")
     public List<Customer> findAllCustomers()
     {
-    	
+    	log.info("Message from Property file"+message);
     		return customerService.getAllCustomers();
     	
     }
@@ -64,12 +74,11 @@ public class CustomerController {
     public ResponseEntity<?> getCustomerById(@PathVariable("customerId") long customerId)
     {
     	Customer customer=customerService.getCustomerById(customerId);
-    	if(customer!=null)
-    	{
+    	
+    	  if(customer == null) {
+    	         throw new RecordNotFoundException("Invalid customer id : " + customerId);
+    	    }
     		return ResponseEntity.status(HttpStatus.ACCEPTED).body(customer);
-    	}
-    	else
-    		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Customer Record Not Found");
     	
     }
     

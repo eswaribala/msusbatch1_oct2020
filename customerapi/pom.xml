@@ -17,7 +17,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<logback.version>1.2.3</logback.version>
-		
+<spring-cloud.version>Hoxton.SR8</spring-cloud.version>		
 	</properties>
 
 	<dependencies>
@@ -74,7 +74,17 @@
 	            <artifactId>springfox-data-rest</artifactId>
 	            <version>2.10.5</version>
 	    </dependency>
-	    
+	    <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-bean-validators</artifactId>
+            <version>2.10.5</version>
+    </dependency>
+    <dependency> 
+		    <groupId>org.springframework.boot</groupId> 
+		    <artifactId>spring-boot-starter-validation</artifactId> 
+      </dependency>
+    
+	
 	     <dependency>
 			    <groupId>com.github.bohnman</groupId>
 			    <artifactId>squiggly-filter-jackson</artifactId>
@@ -90,11 +100,41 @@
        
 		
 		<!-- pull in logback-core and slf4j-api -->
-        <dependency>
+       <!--  <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             
-        </dependency>
+        </dependency> -->
+        <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter</artifactId>
+	        <exclusions>
+	            <exclusion>
+	                <groupId>org.springframework.boot</groupId>
+	                <artifactId>spring-boot-starter-logging</artifactId>
+	            </exclusion>
+	        </exclusions>
+    </dependency>
+        <dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-slf4j-impl</artifactId>
+		  <scope>compile</scope>
+		</dependency>
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-api</artifactId>
+		  <scope>compile</scope>
+		</dependency>
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-core</artifactId>
+		  <scope>compile</scope>
+		</dependency>
+		<dependency>
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>jul-to-slf4j</artifactId>
+		  <scope>compile</scope>
+</dependency>
         <dependency>
     		<groupId>com.fasterxml.jackson.dataformat</groupId>
    			 <artifactId>jackson-dataformat-xml</artifactId>
@@ -110,7 +150,20 @@
 		    <artifactId>rsql-jpa</artifactId>
 		    <version>2.0.2</version>
          </dependency>
-	     
+	     <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+		</dependency>
+		
+		<dependency>
+	     <groupId>org.springframework.cloud</groupId>
+	     <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+		<!-- Vault API -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-vault-config</artifactId>
+		</dependency>
         
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -124,7 +177,17 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-
+    <dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<build>
 		<plugins>
 			<plugin>

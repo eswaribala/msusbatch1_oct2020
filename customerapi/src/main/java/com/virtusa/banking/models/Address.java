@@ -6,6 +6,7 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
@@ -27,6 +28,7 @@ public class Address {
 	@Column(name="Address_Id")
 	private long addressId;
 	@Column(name = "Door_No",nullable = false,length = 5)
+	@NotBlank(message = "Door No is mandatory")
 	private String doorNo;
 	@Column(name = "Street_Name",nullable = false,length = 100)
 	private String streetName;

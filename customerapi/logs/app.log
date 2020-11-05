@@ -1,0 +1,291 @@
+2020-11-04 11:55:59,656 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 11:56:02,618 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 11:56:02,618 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...vignesh
+2020-11-04 11:56:08,752 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 14.766 seconds (JVM running for 15.513)
+2020-11-04 12:13:14,156 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 12:13:18,344 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 12:13:18,346 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...vignesh
+2020-11-04 12:13:27,230 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 24.146 seconds (JVM running for 25.967)
+2020-11-04 12:25:50,158 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 12:26:12,572 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 12:26:13,873 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 12:26:13,873 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...vignesh
+2020-11-04 12:26:17,975 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 12.469 seconds (JVM running for 796.712)
+2020-11-04 12:26:42,507 ERROR com.virtusa.banking.filters.BearerFilter [http-nio-7070-exec-1] No Bearer token found in the request headers
+2020-11-04 12:56:13,586 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 12:56:18,396 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 12:56:18,396 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...vignesh
+2020-11-04 12:56:27,704 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 25.629 seconds (JVM running for 27.014)
+2020-11-04 12:58:41,212 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 12:58:42,820 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 12:58:42,820 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...vignesh
+2020-11-04 12:58:47,784 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 12.608 seconds (JVM running for 167.093)
+2020-11-04 21:14:59,977 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 21:15:03,675 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 21:15:03,676 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...vignesh
+2020-11-04 21:15:11,633 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 20.919 seconds (JVM running for 21.874)
+2020-11-04 22:16:24,345 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 22:16:28,517 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 22:16:28,517 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 22:16:37,361 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 20.278 seconds (JVM running for 21.541)
+2020-11-04 22:17:41,277 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: prod
+2020-11-04 22:17:45,427 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 22:17:45,427 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 22:17:53,946 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 19.701 seconds (JVM running for 20.656)
+2020-11-04 22:19:35,235 INFO com.virtusa.banking.CustomerapiApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-11-04 22:26:58,618 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 22:27:02,048 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev
+2020-11-04 22:27:02,048 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 22:27:02,048 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 22:27:08,789 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 17.094 seconds (JVM running for 17.879)
+2020-11-04 22:29:58,788 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 22:30:02,158 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev got modified
+2020-11-04 22:30:02,158 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 22:30:02,158 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 22:30:09,128 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 17.792 seconds (JVM running for 18.72)
+2020-11-04 22:30:27,301 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-1] Message from Property filemessage from dev got modified
+2020-11-04 22:31:13,084 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-3] Message from Property filemessage from dev got modified
+2020-11-04 22:31:47,613 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-5] Message from Property filemessage from dev got modified
+2020-11-04 22:34:42,963 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 22:34:46,067 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev called from controller
+2020-11-04 22:34:46,067 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 22:34:46,067 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 22:34:52,501 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 16.529 seconds (JVM running for 17.277)
+2020-11-04 22:35:33,240 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-1] Message from Property filemessage from dev called from controller
+2020-11-04 22:35:52,062 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-2] Message from Property filemessage from dev called from controller
+2020-11-04 22:36:28,634 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-4] Message from Property filemessage from dev called from controller
+2020-11-04 22:54:20,282 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 22:54:23,413 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope
+2020-11-04 22:54:23,414 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 22:54:23,414 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 22:54:29,776 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 16.38 seconds (JVM running for 17.112)
+2020-11-04 22:54:35,166 ERROR com.virtusa.banking.filters.BearerFilter [http-nio-7070-exec-1] No Bearer token found in the request headers
+2020-11-04 23:11:31,692 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 23:11:35,355 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope
+2020-11-04 23:11:35,355 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 23:11:35,355 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 23:11:42,806 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 17.276 seconds (JVM running for 18.041)
+2020-11-04 23:13:25,513 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-9] Message from Property filemessage from dev with refresh scope
+2020-11-04 23:25:40,765 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 23:25:44,065 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope
+2020-11-04 23:25:44,066 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 23:25:44,066 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 23:25:50,663 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 16.3 seconds (JVM running for 17.057)
+2020-11-04 23:37:55,107 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 23:37:57,089 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope
+2020-11-04 23:37:57,089 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 23:37:57,089 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 23:38:07,002 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 23:38:08,432 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope
+2020-11-04 23:38:08,432 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 23:38:08,432 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-04 23:38:19,011 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-04 23:38:20,278 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope
+2020-11-04 23:38:20,278 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-04 23:38:20,278 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 11:53:28,060 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 11:53:32,941 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope
+2020-11-05 11:53:32,942 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 11:53:32,942 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 11:53:43,247 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 30.261 seconds (JVM running for 31.823)
+2020-11-05 11:57:42,226 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-1] Message from Property filemessage from dev with refresh scope
+2020-11-05 12:01:09,980 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-6] Message from Property filemessage from dev with refresh scope
+2020-11-05 12:09:08,935 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 12:09:13,356 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh
+2020-11-05 12:09:13,357 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 12:09:13,357 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 12:09:23,653 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 27.305 seconds (JVM running for 28.819)
+2020-11-05 12:11:23,347 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-3] Message from Property filemessage from dev with refresh scope
+2020-11-05 12:13:02,300 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-9] Message from Property filemessage from dev with refresh scope and refresh 
+2020-11-05 13:00:43,548 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:00:47,016 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh 
+2020-11-05 13:00:47,016 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:00:47,016 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:00:54,185 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 18.222 seconds (JVM running for 19.102)
+2020-11-05 13:02:51,972 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:02:53,032 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh 
+2020-11-05 13:02:53,032 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:02:53,039 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:02:55,539 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 8.156 seconds (JVM running for 140.453)
+2020-11-05 13:05:20,555 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:05:25,360 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast
+2020-11-05 13:05:25,361 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:05:25,361 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:05:37,267 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 23.763 seconds (JVM running for 24.621)
+2020-11-05 13:07:04,903 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-4] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated
+2020-11-05 13:08:03,500 INFO com.virtusa.banking.controllers.CustomerController [http-nio-7070-exec-9] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:08:39,012 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:08:40,295 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:08:40,295 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:08:40,295 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:08:45,564 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 10.022 seconds (JVM running for 212.916)
+2020-11-05 13:10:29,235 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:10:30,369 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:10:30,369 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:10:30,369 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:10:35,259 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 9.407 seconds (JVM running for 322.606)
+2020-11-05 13:10:47,400 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:10:48,224 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:10:48,224 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:10:48,224 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:10:53,142 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 9.201 seconds (JVM running for 340.483)
+2020-11-05 13:11:20,473 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-11-05 13:11:38,750 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:11:42,807 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:11:42,807 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:11:42,808 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:11:53,916 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 21.004 seconds (JVM running for 21.75)
+2020-11-05 13:17:05,979 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:17:07,243 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:17:07,243 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:17:07,250 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:17:16,826 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:17:17,823 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:17:17,823 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:17:17,823 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:17:28,878 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:17:29,664 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:17:29,664 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:17:29,664 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:17:37,022 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:17:37,774 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:17:37,774 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:17:37,774 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:18:12,470 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:18:16,719 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:18:16,719 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:18:16,719 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:18:27,904 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 21.089 seconds (JVM running for 21.817)
+2020-11-05 13:20:01,135 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:20:02,309 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:20:02,309 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:20:02,309 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:20:07,542 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 9.979 seconds (JVM running for 121.469)
+2020-11-05 13:20:47,568 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:20:48,614 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:20:48,614 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:20:48,614 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:20:53,714 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 9.418 seconds (JVM running for 167.631)
+2020-11-05 13:21:25,741 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:21:26,672 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:21:26,672 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:21:26,672 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:21:31,473 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 9.112 seconds (JVM running for 205.387)
+2020-11-05 13:21:56,505 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:21:57,352 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:21:57,352 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:21:57,352 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:22:01,972 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 8.659 seconds (JVM running for 235.891)
+2020-11-05 13:22:14,935 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:22:15,570 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:22:15,570 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:22:15,570 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:22:22,653 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:22:23,401 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:22:23,401 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:22:23,401 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:22:29,558 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:22:30,298 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:22:30,298 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:22:30,298 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:22:49,027 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:22:49,674 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:22:49,674 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:22:49,674 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:22:50,986 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:24:39,080 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:24:42,996 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:24:42,996 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:24:43,002 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:24:53,965 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 20.504 seconds (JVM running for 21.229)
+2020-11-05 13:46:02,332 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:46:06,125 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:46:06,125 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:46:06,125 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:46:17,336 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 20.652 seconds (JVM running for 21.38)
+2020-11-05 13:55:49,339 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 13:55:53,036 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 13:55:53,036 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 13:55:53,036 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 13:56:04,025 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 20.3 seconds (JVM running for 21.172)
+2020-11-05 14:01:40,886 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:01:44,827 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:01:44,827 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:01:44,837 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:01:55,511 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 20.248 seconds (JVM running for 20.963)
+2020-11-05 14:03:10,769 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:03:14,408 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:03:14,408 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:03:14,408 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:03:25,495 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 20.358 seconds (JVM running for 21.2)
+2020-11-05 14:06:51,638 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:06:52,840 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:06:52,840 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:06:52,840 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:06:58,254 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 10.13 seconds (JVM running for 233.959)
+2020-11-05 14:09:51,684 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:09:52,547 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:09:52,547 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:09:52,547 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:09:58,017 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 9.774 seconds (JVM running for 413.723)
+2020-11-05 14:09:59,508 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:10:00,277 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:10:00,277 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:10:00,277 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:10:07,403 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:10:08,059 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:10:08,059 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:10:08,059 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:10:29,315 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:10:33,347 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:10:33,348 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:10:33,348 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:10:45,026 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 21.805 seconds (JVM running for 22.58)
+2020-11-05 14:11:12,693 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:11:13,977 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:11:13,977 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:11:13,977 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:11:19,377 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 10.016 seconds (JVM running for 56.938)
+2020-11-05 14:11:32,630 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 14:11:33,628 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 14:11:33,628 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 14:11:33,628 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 14:11:38,859 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 9.907 seconds (JVM running for 76.412)
+2020-11-05 16:28:00,411 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 16:28:06,588 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 16:28:06,588 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 16:28:06,589 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 16:29:56,694 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 16:30:01,950 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 16:30:01,951 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 16:30:01,951 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 16:30:43,267 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 57.322 seconds (JVM running for 59.064)
+2020-11-05 16:34:10,387 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 16:34:12,289 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 16:34:12,290 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 16:34:12,290 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 16:34:47,446 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 44.255 seconds (JVM running for 303.243)
+2020-11-05 16:36:41,266 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 16:36:46,680 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 16:36:46,680 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 16:36:46,680 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 16:37:02,625 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 32.242 seconds (JVM running for 33.826)
+2020-11-05 16:41:49,643 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 16:41:51,374 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 16:41:51,375 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 16:41:51,375 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 16:42:01,647 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 19.24 seconds (JVM running for 332.847)
+2020-11-05 16:42:17,287 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 16:42:18,584 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 16:42:18,585 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 16:42:18,585 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 16:42:28,286 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 17.727 seconds (JVM running for 359.487)
+2020-11-05 16:42:39,693 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 16:42:41,229 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 16:42:41,230 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 16:42:41,230 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 16:44:46,217 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] The following profiles are active: dev
+2020-11-05 16:44:51,357 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh or cloud bus broadcast activated perfectly
+2020-11-05 16:44:51,358 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] User Name...root
+2020-11-05 16:44:51,358 INFO com.virtusa.banking.configurations.DbConfiguration [restartedMain] Password...vignesh
+2020-11-05 16:45:07,101 INFO com.virtusa.banking.CustomerapiApplication [restartedMain] Started CustomerapiApplication in 32.504 seconds (JVM running for 34.076)

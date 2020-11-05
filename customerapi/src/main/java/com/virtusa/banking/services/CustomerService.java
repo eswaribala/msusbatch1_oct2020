@@ -13,7 +13,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.github.tennaito.rsql.jpa.JpaCriteriaQueryVisitor;
-
+import com.virtusa.banking.exceptions.MobileNoException;
 import com.virtusa.banking.models.Customer;
 import com.virtusa.banking.models.Gender;
 import com.virtusa.banking.repositories.CustomerRepository;
@@ -35,6 +35,7 @@ public class CustomerService {
 	
 	public Customer addCustomer(Customer customer)
 	{
+		
 		if( customer.getAddressList().size() > 0 )
         {
             customer.getAddressList().stream().forEach( address -> {
