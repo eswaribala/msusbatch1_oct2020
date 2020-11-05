@@ -1,0 +1,13 @@
+1. Add @Refreshscope on top of controller
+2. Add management endpoint exposure include=* in application.properties
+3. modify property file in repo
+4. From postman
+
+Http method POST
+body {}
+content application/json
+http://localhost:7070/actuator/refresh
+or
+curl -H "Content-Type: application/json" -d {} http://localhost:port/actuator/refresh
+
+5. http://localhost:7070/customers will show updated properties
