@@ -1,0 +1,26 @@
+[
+  {
+    "studId": "1",
+    "studName": "peter",
+    "city": "texas",
+    "phone": "0001200"
+  },
+  {
+    "studId": "2",
+    "studName": "sam",
+    "city": "newyork",
+    "phone": "0001100"
+  },
+  {
+    "studId": "3",
+    "studName": "david",
+    "city": "newjersy",
+    "phone": "0201100"
+  },
+  {
+    "studId": "4",
+    "studName": "david",
+    "city": "newjersy",
+    "phone": "0201100"
+  }
+]
