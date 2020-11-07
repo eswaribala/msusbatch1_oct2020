@@ -1,391 +1,147 @@
-2020-11-07 20:11:47,233 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
-2020-11-07 20:11:49,308 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService
-2020-11-07 20:11:50,732 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [main] Vault location [secret/application] not resolvable: Not found
-2020-11-07 20:11:50,733 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 20:11:50,742 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [main] Fetching config from server at : http://localhost:8888
-2020-11-07 20:11:52,794 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [main] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[default], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 20:11:52,795 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [main] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
-2020-11-07 20:11:52,807 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-11-07 20:11:54,223 WARN o.s.b.a.e.EndpointId [main] Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
-2020-11-07 20:11:54,694 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-07 20:11:54,960 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 255ms. Found 1 JPA repository interfaces.
-2020-11-07 20:11:55,114 WARN o.s.b.a.e.EndpointId [main] Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
-2020-11-07 20:11:55,429 INFO o.s.c.c.s.GenericScope [main] BeanFactory id=2c7bc00f-4f44-3acd-9160-fe105943a17c
-2020-11-07 20:11:55,602 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-11-07 20:11:55,614 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-11-07 20:11:55,633 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-11-07 20:11:55,961 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 20:11:55,965 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 20:11:56,009 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 20:11:56,256 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'db_url' in value "${db_url}"
-2020-11-07 20:11:56,280 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [main] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-11-07 20:11:56,284 INFO o.s.s.c.ExecutorConfigurationSupport [main] Shutting down ExecutorService
-2020-11-07 20:11:56,287 ERROR o.s.b.SpringApplication [main] Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'db_url' in value "${db_url}"
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_152]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_152]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382) ~[?:1.8.0_152]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_152]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_152]
-	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:1.8.0_152]
-	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[?:1.8.0_152]
-	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[?:1.8.0_152]
-	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[?:1.8.0_152]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at java.util.Optional.orElseGet(Optional.java:267) ~[?:1.8.0_152]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_152]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_152]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) [junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) [junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) [junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) [surefire-junit-platform-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) [surefire-junit-platform-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'db_url' in value "${db_url}"
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	... 93 more
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'db_url' in value "${db_url}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	... 93 more
-2020-11-07 20:11:56,308 ERROR o.s.t.c.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@250a946] to prepare test instance [com.virtusa.banking.CustomerapiApplicationTests@5fe5c68b]
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_152]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_152]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382) ~[?:1.8.0_152]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_152]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_152]
-	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:1.8.0_152]
-	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[?:1.8.0_152]
-	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[?:1.8.0_152]
-	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[?:1.8.0_152]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at java.util.Optional.orElseGet(Optional.java:267) ~[?:1.8.0_152]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_152]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_152]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.3.jar:1.6.3]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) [junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) [junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) [junit-platform-launcher-1.3.1.jar:1.3.1]
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) [surefire-junit-platform-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) [surefire-junit-platform-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'db_url' in value "${db_url}"
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	... 65 more
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'db_url' in value "${db_url}"
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	... 65 more
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'db_url' in value "${db_url}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.5.RELEASE.jar:2.3.5.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	... 65 more
+2020-11-07 21:48:01,489 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-11-07 21:48:01,768 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-07 21:48:05,791 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-07 21:48:10,053 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
+2020-11-07 21:48:10,111 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
+2020-11-07 21:48:10,154 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
+2020-11-07 21:48:10,158 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
+2020-11-07 21:48:10,201 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-11-07 21:48:13,451 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 21:48:13,454 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
+2020-11-07 21:48:13,475 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
+2020-11-07 21:48:15,436 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+2020-11-07 21:48:15,911 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-07 21:48:16,231 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 308ms. Found 1 JPA repository interfaces.
+2020-11-07 21:48:16,455 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+2020-11-07 21:48:16,642 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-07 21:48:17,317 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=8ed280af-71cc-3690-b56a-8bbe3677f5ee
+2020-11-07 21:48:17,335 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-11-07 21:48:17,343 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-11-07 21:48:17,358 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-11-07 21:48:17,748 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-07 21:48:17,757 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-07 21:48:17,835 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-07 21:48:19,054 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7072 (http)
+2020-11-07 21:48:19,073 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7072"]
+2020-11-07 21:48:19,074 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-07 21:48:19,075 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-07 21:48:19,366 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-07 21:48:19,366 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5836 ms
+2020-11-07 21:48:19,798 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-11-07 21:48:19,799 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-07 21:48:19,840 INFO c.n.c.DynamicPropertyFactory [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@17b1a2fb
+2020-11-07 21:48:20,325 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
+2020-11-07 21:48:20,325 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
+2020-11-07 21:48:20,325 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
+2020-11-07 21:48:20,553 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-07 21:48:20,623 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
+2020-11-07 21:48:20,737 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-07 21:48:20,858 INFO o.h.Version [task-1] HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-07 21:48:21,499 INFO o.h.a.c.r.j.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-07 21:48:21,791 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Starting...
+2020-11-07 21:48:21,888 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-07 21:48:22,167 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2020-11-07 21:48:22,206 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-07 21:48:23,949 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-07 21:48:23,961 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-07 21:48:28,227 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 22 endpoint(s) beneath base path '/actuator'
+2020-11-07 21:48:28,476 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
+2020-11-07 21:48:28,982 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2020-11-07 21:48:29,121 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-11-07 21:48:29,126 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-07 21:48:30,227 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-11-07 21:48:32,826 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses Jersey
+2020-11-07 21:48:32,960 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-07 21:48:33,396 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
+2020-11-07 21:48:33,547 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-11-07 21:48:33,547 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
+2020-11-07 21:48:33,547 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2020-11-07 21:48:33,550 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
+2020-11-07 21:48:35,382 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
+2020-11-07 21:48:35,407 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
+2020-11-07 21:48:35,417 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
+2020-11-07 21:48:35,418 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
+2020-11-07 21:48:35,434 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-11-07 21:48:39,689 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 21:48:39,689 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+2020-11-07 21:48:39,980 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-11-07 21:48:40,389 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-11-07 21:48:40,401 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
+2020-11-07 21:48:40,402 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
+2020-11-07 21:48:40,847 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
+2020-11-07 21:48:40,986 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#588c84a4:0/SimpleConnection@44f1dc65 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 61858]
+2020-11-07 21:48:41,073 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
+2020-11-07 21:48:41,108 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-11-07 21:48:41,198 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-11-07 21:48:41,325 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-11-07 21:48:41,325 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-11-07 21:48:41,660 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-11-07 21:48:41,661 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-11-07 21:48:42,065 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-11-07 21:48:43,148 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 1
+2020-11-07 21:48:43,157 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-07 21:48:43,168 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1604765923164 with initial instances count: 0
+2020-11-07 21:48:43,188 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP with eureka with status UP
+2020-11-07 21:48:43,190 INFO c.n.d.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1604765923190, current=UP, previous=STARTING]
+2020-11-07 21:48:43,193 WARN c.n.d.InstanceInfoReplicator [restartedMain] Ignoring onDemand update due to rate limiter
+2020-11-07 21:48:43,195 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
+2020-11-07 21:48:43,195 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 21:48:43,361 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.04x5BXwSRJax74QD5aqrzA, bound to: springCloudBus
+2020-11-07 21:48:43,492 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.04x5BXwSRJax74QD5aqrzA.errors' has 1 subscriber(s).
+2020-11-07 21:48:43,493 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.04x5BXwSRJax74QD5aqrzA.errors' has 2 subscriber(s).
+2020-11-07 21:48:43,683 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.04x5BXwSRJax74QD5aqrzA'
+2020-11-07 21:48:43,687 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7072"]
+2020-11-07 21:48:43,740 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7072 (http) with context path ''
+2020-11-07 21:48:43,743 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 7072
+2020-11-07 21:48:44,285 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7072 - Re-registering apps/CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP
+2020-11-07 21:48:44,285 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7072: registering service...
+2020-11-07 21:48:44,376 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7072 - registration status: 204
+2020-11-07 21:48:45,732 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
+2020-11-07 21:48:45,741 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-11-07 21:48:45,878 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-11-07 21:48:46,243 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-11-07 21:48:46,248 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-11-07 21:48:46,480 INFO o.s.b.StartupInfoLogger [restartedMain] Started CustomerapiApplication in 48.732 seconds (JVM running for 50.898)
+2020-11-07 21:48:47,224 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 21:52:09,735 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 21:52:12,804 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 21:52:18,528 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 21:53:44,164 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 21:53:47,682 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 21:53:54,060 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 21:57:09,735 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 21:57:18,898 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 21:57:23,685 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 21:58:44,181 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 21:58:54,461 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 21:58:59,685 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:02:09,734 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:02:24,115 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:02:30,324 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:03:44,179 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:04:00,030 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:04:05,013 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:07:09,731 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:07:30,638 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:07:40,099 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:08:44,177 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:09:05,464 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:09:09,765 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:12:09,729 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:12:40,490 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:12:46,049 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:13:44,175 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:14:10,186 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:14:14,718 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:17:09,729 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:17:46,424 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:17:51,656 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:18:44,176 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:19:15,127 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:19:20,353 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:22:09,729 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:22:52,025 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:22:56,554 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-07 22:23:44,176 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-11-07 22:24:20,771 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-07 22:24:27,102 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
