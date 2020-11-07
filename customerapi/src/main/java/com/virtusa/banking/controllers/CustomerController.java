@@ -44,7 +44,9 @@ public class CustomerController {
     @Value("${message}")
     private String message;
     //postmapping
-    @PostMapping("/customers")
+    @RequestMapping(value = "/customers", 
+  		  produces = { "application/json", "application/xml" }, 
+  		  method = RequestMethod.POST)
     @CrossOrigin("*")
     public ResponseEntity<?> addCustomer(@Valid @RequestBody Customer customer)
     {
