@@ -1,147 +1,109 @@
-2020-11-07 21:48:01,489 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
-2020-11-07 21:48:01,768 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-07 21:48:05,791 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
-2020-11-07 21:48:10,053 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 21:48:10,111 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 21:48:10,154 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 21:48:10,158 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 21:48:10,201 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 21:48:13,451 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 21:48:13,454 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
-2020-11-07 21:48:13,475 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
-2020-11-07 21:48:15,436 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
-2020-11-07 21:48:15,911 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-07 21:48:16,231 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 308ms. Found 1 JPA repository interfaces.
-2020-11-07 21:48:16,455 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
-2020-11-07 21:48:16,642 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-11-07 21:48:17,317 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=8ed280af-71cc-3690-b56a-8bbe3677f5ee
-2020-11-07 21:48:17,335 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-11-07 21:48:17,343 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-11-07 21:48:17,358 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-11-07 21:48:17,748 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 21:48:17,757 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 21:48:17,835 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 21:48:19,054 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7072 (http)
-2020-11-07 21:48:19,073 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7072"]
-2020-11-07 21:48:19,074 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2020-11-07 21:48:19,075 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-07 21:48:19,366 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-11-07 21:48:19,366 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5836 ms
-2020-11-07 21:48:19,798 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
-2020-11-07 21:48:19,799 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-11-07 21:48:19,840 INFO c.n.c.DynamicPropertyFactory [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@17b1a2fb
-2020-11-07 21:48:20,325 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
-2020-11-07 21:48:20,325 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
-2020-11-07 21:48:20,325 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
-2020-11-07 21:48:20,553 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-07 21:48:20,623 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
-2020-11-07 21:48:20,737 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-07 21:48:20,858 INFO o.h.Version [task-1] HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-07 21:48:21,499 INFO o.h.a.c.r.j.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-07 21:48:21,791 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Starting...
-2020-11-07 21:48:21,888 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-07 21:48:22,167 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Start completed.
-2020-11-07 21:48:22,206 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-11-07 21:48:23,949 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-07 21:48:23,961 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 21:48:28,227 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 22 endpoint(s) beneath base path '/actuator'
-2020-11-07 21:48:28,476 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
-2020-11-07 21:48:28,982 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2020-11-07 21:48:29,121 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
-2020-11-07 21:48:29,126 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-11-07 21:48:30,227 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
-2020-11-07 21:48:32,826 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses Jersey
-2020-11-07 21:48:32,960 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-11-07 21:48:33,396 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
-2020-11-07 21:48:33,547 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 21:48:33,547 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
-2020-11-07 21:48:33,547 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
-2020-11-07 21:48:33,550 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
-2020-11-07 21:48:35,382 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 21:48:35,407 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 21:48:35,417 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 21:48:35,418 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 21:48:35,434 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 21:48:39,689 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 21:48:39,689 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
-2020-11-07 21:48:39,980 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 21:48:40,389 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 21:48:40,401 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
-2020-11-07 21:48:40,402 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 21:48:40,847 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
-2020-11-07 21:48:40,986 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#588c84a4:0/SimpleConnection@44f1dc65 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 61858]
-2020-11-07 21:48:41,073 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
-2020-11-07 21:48:41,108 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
-2020-11-07 21:48:41,198 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
-2020-11-07 21:48:41,325 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
-2020-11-07 21:48:41,325 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
-2020-11-07 21:48:41,660 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
-2020-11-07 21:48:41,661 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
-2020-11-07 21:48:42,065 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
-2020-11-07 21:48:43,148 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 1
-2020-11-07 21:48:43,157 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-11-07 21:48:43,168 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1604765923164 with initial instances count: 0
-2020-11-07 21:48:43,188 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP with eureka with status UP
-2020-11-07 21:48:43,190 INFO c.n.d.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1604765923190, current=UP, previous=STARTING]
-2020-11-07 21:48:43,193 WARN c.n.d.InstanceInfoReplicator [restartedMain] Ignoring onDemand update due to rate limiter
-2020-11-07 21:48:43,195 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 21:48:43,195 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 21:48:43,361 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.04x5BXwSRJax74QD5aqrzA, bound to: springCloudBus
-2020-11-07 21:48:43,492 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.04x5BXwSRJax74QD5aqrzA.errors' has 1 subscriber(s).
-2020-11-07 21:48:43,493 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.04x5BXwSRJax74QD5aqrzA.errors' has 2 subscriber(s).
-2020-11-07 21:48:43,683 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.04x5BXwSRJax74QD5aqrzA'
-2020-11-07 21:48:43,687 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7072"]
-2020-11-07 21:48:43,740 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7072 (http) with context path ''
-2020-11-07 21:48:43,743 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 7072
-2020-11-07 21:48:44,285 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7072 - Re-registering apps/CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP
-2020-11-07 21:48:44,285 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7072: registering service...
-2020-11-07 21:48:44,376 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7072 - registration status: 204
-2020-11-07 21:48:45,732 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
-2020-11-07 21:48:45,741 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
-2020-11-07 21:48:45,878 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
-2020-11-07 21:48:46,243 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 21:48:46,248 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 21:48:46,480 INFO o.s.b.StartupInfoLogger [restartedMain] Started CustomerapiApplication in 48.732 seconds (JVM running for 50.898)
-2020-11-07 21:48:47,224 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 21:52:09,735 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 21:52:12,804 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 21:52:18,528 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 21:53:44,164 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 21:53:47,682 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 21:53:54,060 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 21:57:09,735 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 21:57:18,898 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 21:57:23,685 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 21:58:44,181 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 21:58:54,461 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 21:58:59,685 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:02:09,734 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:02:24,115 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:02:30,324 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:03:44,179 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:04:00,030 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:04:05,013 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:07:09,731 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:07:30,638 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:07:40,099 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:08:44,177 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:09:05,464 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:09:09,765 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:12:09,729 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:12:40,490 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:12:46,049 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:13:44,175 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:14:10,186 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:14:14,718 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:17:09,729 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:17:46,424 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:17:51,656 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:18:44,176 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:19:15,127 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:19:20,353 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:22:09,729 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:22:52,025 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:22:56,554 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
-2020-11-07 22:23:44,176 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
-2020-11-07 22:24:20,771 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
-2020-11-07 22:24:27,102 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-10 22:02:39,507 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-11-10 22:02:39,734 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-10 22:02:42,211 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-10 22:02:43,284 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-10 22:02:48,237 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
+2020-11-10 22:02:48,423 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
+2020-11-10 22:02:48,450 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
+2020-11-10 22:02:48,451 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
+2020-11-10 22:02:48,475 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-11-10 22:02:54,073 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-10 22:02:54,075 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
+2020-11-10 22:02:54,089 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
+2020-11-10 22:02:56,359 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+2020-11-10 22:02:56,868 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-10 22:02:57,233 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 354ms. Found 1 JPA repository interfaces.
+2020-11-10 22:02:57,440 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+2020-11-10 22:02:57,629 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-10 22:02:58,019 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=8ed280af-71cc-3690-b56a-8bbe3677f5ee
+2020-11-10 22:02:58,045 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-11-10 22:02:58,056 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-11-10 22:02:58,068 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-11-10 22:02:58,395 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-10 22:02:58,399 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-10 22:02:58,444 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-10 22:02:59,736 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7070 (http)
+2020-11-10 22:02:59,783 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7070"]
+2020-11-10 22:02:59,785 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-10 22:02:59,786 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-10 22:03:00,141 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-10 22:03:00,141 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6018 ms
+2020-11-10 22:03:00,523 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-11-10 22:03:00,524 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-10 22:03:00,556 INFO c.n.c.DynamicPropertyFactory [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7a167a2a
+2020-11-10 22:03:01,012 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
+2020-11-10 22:03:01,012 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
+2020-11-10 22:03:01,013 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
+2020-11-10 22:03:01,236 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-10 22:03:01,306 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
+2020-11-10 22:03:01,423 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-10 22:03:01,541 INFO o.h.Version [task-1] HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-10 22:03:02,206 INFO o.h.a.c.r.j.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-10 22:03:02,492 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Starting...
+2020-11-10 22:03:02,507 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 22:03:02,955 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2020-11-10 22:03:03,012 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-10 22:03:04,821 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-10 22:03:04,854 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 22:03:10,612 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 22 endpoint(s) beneath base path '/actuator'
+2020-11-10 22:03:10,906 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
+2020-11-10 22:03:11,454 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2020-11-10 22:03:11,587 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-11-10 22:03:11,587 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-10 22:03:12,735 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-11-10 22:03:15,524 INFO o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses Jersey
+2020-11-10 22:03:15,766 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-10 22:03:16,185 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
+2020-11-10 22:03:16,285 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-11-10 22:03:16,285 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
+2020-11-10 22:03:16,285 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2020-11-10 22:03:16,289 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
+2020-11-10 22:03:18,633 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
+2020-11-10 22:03:18,758 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
+2020-11-10 22:03:18,768 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
+2020-11-10 22:03:18,768 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
+2020-11-10 22:03:18,778 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-11-10 22:03:22,827 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-10 22:03:22,827 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+2020-11-10 22:03:23,095 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-11-10 22:03:23,480 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-11-10 22:03:23,492 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
+2020-11-10 22:03:23,493 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
+2020-11-10 22:03:23,773 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
+2020-11-10 22:03:23,980 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#46011c1d:0/SimpleConnection@25dbc2b0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 64007]
+2020-11-10 22:03:24,075 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
+2020-11-10 22:03:24,104 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-11-10 22:03:24,201 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-11-10 22:03:24,362 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-11-10 22:03:24,363 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-11-10 22:03:24,723 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-11-10 22:03:24,723 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-11-10 22:03:25,101 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-11-10 22:03:25,843 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 1
+2020-11-10 22:03:25,850 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-10 22:03:25,855 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1605026005853 with initial instances count: 0
+2020-11-10 22:03:25,866 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP with eureka with status UP
+2020-11-10 22:03:25,867 INFO c.n.d.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1605026005867, current=UP, previous=STARTING]
+2020-11-10 22:03:25,869 WARN c.n.d.InstanceInfoReplicator [restartedMain] Ignoring onDemand update due to rate limiter
+2020-11-10 22:03:25,872 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
+2020-11-10 22:03:25,876 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Fetching config from server at : http://localhost:8888
+2020-11-10 22:03:25,959 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.pEnRBbBaQFuahB5piVCtpQ, bound to: springCloudBus
+2020-11-10 22:03:26,013 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.pEnRBbBaQFuahB5piVCtpQ.errors' has 1 subscriber(s).
+2020-11-10 22:03:26,014 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.pEnRBbBaQFuahB5piVCtpQ.errors' has 2 subscriber(s).
+2020-11-10 22:03:26,068 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.pEnRBbBaQFuahB5piVCtpQ'
+2020-11-10 22:03:26,071 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7070"]
+2020-11-10 22:03:26,130 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7070 (http) with context path ''
+2020-11-10 22:03:26,132 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 7070
+2020-11-10 22:03:27,039 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7070 - Re-registering apps/CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP
+2020-11-10 22:03:27,041 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7070: registering service...
+2020-11-10 22:03:27,151 INFO c.n.d.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_CUSTOMER-SERVICE,BANK-APP-COMMON,BANK-APP/DESKTOP-55AGI0I:CUSTOMER-SERVICE,bank-app-common,bank-app:7070 - registration status: 204
+2020-11-10 22:03:27,908 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
+2020-11-10 22:03:27,917 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-11-10 22:03:28,112 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-11-10 22:03:28,462 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-11-10 22:03:28,465 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-11-10 22:03:28,651 INFO o.s.b.StartupInfoLogger [restartedMain] Started CustomerapiApplication in 53.302 seconds (JVM running for 56.279)
+2020-11-10 22:03:28,864 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [DiscoveryClient-InstanceInfoReplicator-0] Located environment: name=CUSTOMER-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-10 22:03:52,026 INFO o.a.j.l.DirectJDKLog [http-nio-7070-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-10 22:03:52,027 INFO o.s.w.s.FrameworkServlet [http-nio-7070-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-11-10 22:03:52,119 INFO o.s.w.s.FrameworkServlet [http-nio-7070-exec-1] Completed initialization in 92 ms

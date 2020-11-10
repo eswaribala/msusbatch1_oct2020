@@ -1,530 +1,689 @@
-2020-11-07 18:54:58,761 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
-2020-11-07 18:54:58,900 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-07 18:55:00,573 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
-2020-11-07 18:55:01,811 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:55:01,846 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:55:01,861 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:55:01,863 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:55:01,874 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:55:04,038 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=APPOINTMENT-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:55:04,039 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
-2020-11-07 18:55:04,046 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
-2020-11-07 18:55:05,299 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
-2020-11-07 18:55:05,602 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-07 18:55:05,833 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 220ms. Found 1 JPA repository interfaces.
-2020-11-07 18:55:05,958 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
-2020-11-07 18:55:06,217 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=b3f7d390-41d0-30f5-97db-79ab05fcedc0
-2020-11-07 18:55:06,236 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-11-07 18:55:06,244 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-11-07 18:55:06,252 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-11-07 18:55:06,480 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:55:06,485 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:55:06,525 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:55:07,425 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
-2020-11-07 18:55:07,443 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:55:07,444 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2020-11-07 18:55:07,445 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-07 18:55:07,659 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-11-07 18:55:07,659 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3593 ms
-2020-11-07 18:55:08,172 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
-2020-11-07 18:55:08,173 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
-2020-11-07 18:55:08,173 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
-2020-11-07 18:55:08,329 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:55:08,380 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
-2020-11-07 18:55:08,471 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-07 18:55:08,563 INFO o.h.Version [task-1] HHH000412: Hibernate ORM core version 5.4.22.Final
-2020-11-07 18:55:08,782 INFO o.h.a.c.r.j.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-07 18:55:09,163 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Starting...
-2020-11-07 18:55:09,310 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-07 18:55:09,420 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Start completed.
-2020-11-07 18:55:09,448 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-11-07 18:55:10,263 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-07 18:55:10,273 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:55:11,681 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
-2020-11-07 18:55:11,790 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
-2020-11-07 18:55:12,043 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2020-11-07 18:55:12,941 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
-2020-11-07 18:55:14,547 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
-2020-11-07 18:55:14,625 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:55:14,625 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
-2020-11-07 18:55:14,625 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:55:14,628 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
-2020-11-07 18:55:15,768 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:55:15,783 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:55:15,789 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:55:15,790 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:55:15,797 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:55:17,693 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:55:17,693 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
-2020-11-07 18:55:17,867 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:55:17,935 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:55:17,946 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
-2020-11-07 18:55:17,946 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:55:18,053 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
-2020-11-07 18:55:18,152 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#95d9bf0:0/SimpleConnection@2eb43189 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58860]
-2020-11-07 18:55:18,222 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
-2020-11-07 18:55:18,226 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:55:18,321 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.43yUdfPiS6WG2ZFpfPXgng, bound to: springCloudBus
-2020-11-07 18:55:18,376 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.43yUdfPiS6WG2ZFpfPXgng.errors' has 1 subscriber(s).
-2020-11-07 18:55:18,377 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.43yUdfPiS6WG2ZFpfPXgng.errors' has 2 subscriber(s).
-2020-11-07 18:55:18,421 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.43yUdfPiS6WG2ZFpfPXgng'
-2020-11-07 18:55:18,424 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:55:18,469 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
-2020-11-07 18:55:19,419 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
-2020-11-07 18:55:19,423 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
-2020-11-07 18:55:19,467 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
-2020-11-07 18:55:19,564 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:55:19,565 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:55:19,647 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppointmentapiApplication in 22.12 seconds (JVM running for 23.151)
-2020-11-07 18:55:35,766 INFO o.a.j.l.DirectJDKLog [http-nio-7080-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-07 18:55:35,767 INFO o.s.w.s.FrameworkServlet [http-nio-7080-exec-4] Initializing Servlet 'dispatcherServlet'
-2020-11-07 18:55:35,802 INFO o.s.w.s.FrameworkServlet [http-nio-7080-exec-4] Completed initialization in 35 ms
-2020-11-07 18:55:36,146 ERROR c.v.b.e.CustomResponseErrorHandler [http-nio-7080-exec-4] URL: http://localhost:7070/customers/71, HttpMethod: GET, ResponseBody: {"message":"INCORRECT_REQUEST","details":["Invalid customer id : 71"]}
-2020-11-07 18:56:18,977 WARN o.s.w.s.m.m.a.ResponseEntityExceptionHandler [http-nio-7080-exec-7] Request method 'GET' not supported
-2020-11-07 18:56:18,978 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-7080-exec-7] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2020-11-07 18:57:32,992 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-2] Waiting for workers to finish.
-2020-11-07 18:57:33,705 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-2] Successfully waited for workers to finish.
-2020-11-07 18:57:33,705 INFO o.s.i.e.AbstractEndpoint [Thread-2] stopped bean 'inbound.springCloudBus.anonymous.43yUdfPiS6WG2ZFpfPXgng'
-2020-11-07 18:57:33,711 INFO o.s.i.c.AbstractSubscribableChannel [Thread-2] Channel 'dbsecret-1.springCloudBus.anonymous.43yUdfPiS6WG2ZFpfPXgng.errors' has 1 subscriber(s).
-2020-11-07 18:57:33,712 INFO o.s.i.c.AbstractSubscribableChannel [Thread-2] Channel 'dbsecret-1.springCloudBus.anonymous.43yUdfPiS6WG2ZFpfPXgng.errors' has 0 subscriber(s).
-2020-11-07 18:57:33,720 INFO o.s.i.e.EventDrivenConsumer [Thread-2] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:57:33,721 INFO o.s.i.c.AbstractSubscribableChannel [Thread-2] Channel 'dbsecret-1.errorChannel' has 0 subscriber(s).
-2020-11-07 18:57:33,721 INFO o.s.i.e.AbstractEndpoint [Thread-2] stopped bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:57:33,744 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-2] Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:57:33,747 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-2] Shutting down ExecutorService 'taskScheduler'
-2020-11-07 18:57:33,747 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-2] Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:57:33,748 INFO c.z.h.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
-2020-11-07 18:57:33,761 INFO c.z.h.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.
-2020-11-07 18:57:33,767 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-2] Shutting down ExecutorService
-2020-11-07 18:57:35,162 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
-2020-11-07 18:57:36,408 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:57:36,491 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:57:36,517 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:57:36,518 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:57:36,524 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:57:39,007 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=APPOINTMENT-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:57:39,007 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
-2020-11-07 18:57:39,010 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
-2020-11-07 18:57:39,701 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-07 18:57:39,711 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 9ms. Found 1 JPA repository interfaces.
-2020-11-07 18:57:39,799 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=b3f7d390-41d0-30f5-97db-79ab05fcedc0
-2020-11-07 18:57:39,807 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-11-07 18:57:39,807 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-11-07 18:57:39,809 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-11-07 18:57:39,853 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:57:39,855 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:57:39,864 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:57:40,082 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
-2020-11-07 18:57:40,083 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:57:40,083 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2020-11-07 18:57:40,084 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-07 18:57:40,110 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-11-07 18:57:40,110 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1096 ms
-2020-11-07 18:57:40,313 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
-2020-11-07 18:57:40,315 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
-2020-11-07 18:57:40,315 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
-2020-11-07 18:57:40,386 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:57:40,392 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
-2020-11-07 18:57:40,406 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-07 18:57:40,413 INFO c.z.h.HikariDataSource [task-1] HikariPool-2 - Starting...
-2020-11-07 18:57:40,432 INFO c.z.h.HikariDataSource [task-1] HikariPool-2 - Start completed.
-2020-11-07 18:57:40,432 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-11-07 18:57:40,513 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-07 18:57:40,514 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:57:40,594 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
-2020-11-07 18:57:40,793 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-07 18:57:41,109 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
-2020-11-07 18:57:41,154 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2020-11-07 18:57:41,288 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
-2020-11-07 18:57:42,175 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
-2020-11-07 18:57:42,229 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:57:42,229 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
-2020-11-07 18:57:42,229 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:57:42,231 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
-2020-11-07 18:57:43,169 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:57:43,179 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:57:43,660 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:57:43,660 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:57:43,663 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:57:45,486 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:57:45,486 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
-2020-11-07 18:57:45,511 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:57:45,525 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:57:45,527 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
-2020-11-07 18:57:45,527 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:57:45,561 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
-2020-11-07 18:57:45,571 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#43998451:0/SimpleConnection@5555e988 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58920]
-2020-11-07 18:57:45,578 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
-2020-11-07 18:57:45,579 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:57:45,607 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.lkp5LYCiSnmE3SiQbcXObA, bound to: springCloudBus
-2020-11-07 18:57:45,615 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.lkp5LYCiSnmE3SiQbcXObA.errors' has 1 subscriber(s).
-2020-11-07 18:57:45,616 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.lkp5LYCiSnmE3SiQbcXObA.errors' has 2 subscriber(s).
-2020-11-07 18:57:45,621 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.lkp5LYCiSnmE3SiQbcXObA'
-2020-11-07 18:57:45,622 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:57:45,625 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
-2020-11-07 18:57:46,492 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
-2020-11-07 18:57:46,493 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
-2020-11-07 18:57:46,510 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
-2020-11-07 18:57:46,542 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:57:46,543 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:57:46,564 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppointmentapiApplication in 12.47 seconds (JVM running for 170.069)
-2020-11-07 18:57:46,567 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2020-11-07 18:57:48,366 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-11] Waiting for workers to finish.
-2020-11-07 18:57:48,645 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-11] Successfully waited for workers to finish.
-2020-11-07 18:57:48,645 INFO o.s.i.e.AbstractEndpoint [Thread-11] stopped bean 'inbound.springCloudBus.anonymous.lkp5LYCiSnmE3SiQbcXObA'
-2020-11-07 18:57:48,648 INFO o.s.i.c.AbstractSubscribableChannel [Thread-11] Channel 'dbsecret-1.springCloudBus.anonymous.lkp5LYCiSnmE3SiQbcXObA.errors' has 1 subscriber(s).
-2020-11-07 18:57:48,649 INFO o.s.i.c.AbstractSubscribableChannel [Thread-11] Channel 'dbsecret-1.springCloudBus.anonymous.lkp5LYCiSnmE3SiQbcXObA.errors' has 0 subscriber(s).
-2020-11-07 18:57:48,650 INFO o.s.i.e.EventDrivenConsumer [Thread-11] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:57:48,651 INFO o.s.i.c.AbstractSubscribableChannel [Thread-11] Channel 'dbsecret-1.errorChannel' has 0 subscriber(s).
-2020-11-07 18:57:48,651 INFO o.s.i.e.AbstractEndpoint [Thread-11] stopped bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:57:48,659 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:57:48,660 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-11] Shutting down ExecutorService 'taskScheduler'
-2020-11-07 18:57:48,660 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-11] Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:57:48,661 INFO c.z.h.HikariDataSource [Thread-11] HikariPool-2 - Shutdown initiated...
-2020-11-07 18:57:48,667 INFO c.z.h.HikariDataSource [Thread-11] HikariPool-2 - Shutdown completed.
-2020-11-07 18:57:48,669 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-11] Shutting down ExecutorService
-2020-11-07 18:57:49,871 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
-2020-11-07 18:57:50,646 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:57:50,668 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:57:50,678 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:57:50,678 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:57:50,681 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:57:52,515 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=APPOINTMENT-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:57:52,515 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
-2020-11-07 18:57:52,516 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
-2020-11-07 18:57:53,067 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-07 18:57:53,075 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
-2020-11-07 18:57:53,193 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=b3f7d390-41d0-30f5-97db-79ab05fcedc0
-2020-11-07 18:57:53,200 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-11-07 18:57:53,201 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-11-07 18:57:53,203 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-11-07 18:57:53,351 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:57:53,359 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:57:53,378 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:57:53,604 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
-2020-11-07 18:57:53,606 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:57:53,606 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2020-11-07 18:57:53,607 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-07 18:57:53,657 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-11-07 18:57:53,657 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1138 ms
-2020-11-07 18:57:53,807 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
-2020-11-07 18:57:53,807 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
-2020-11-07 18:57:53,808 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
-2020-11-07 18:57:53,877 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:57:53,885 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
-2020-11-07 18:57:53,892 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-07 18:57:53,900 INFO c.z.h.HikariDataSource [task-1] HikariPool-3 - Starting...
-2020-11-07 18:57:53,909 INFO c.z.h.HikariDataSource [task-1] HikariPool-3 - Start completed.
-2020-11-07 18:57:53,910 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-11-07 18:57:53,976 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-07 18:57:53,976 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:57:54,047 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
-2020-11-07 18:57:54,187 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-07 18:57:54,433 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
-2020-11-07 18:57:54,473 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2020-11-07 18:57:54,580 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
-2020-11-07 18:57:55,374 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
-2020-11-07 18:57:55,409 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:57:55,409 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
-2020-11-07 18:57:55,409 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:57:55,410 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
-2020-11-07 18:57:56,214 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:57:56,226 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:57:56,232 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:57:56,232 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:57:56,236 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:57:58,044 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:57:58,045 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
-2020-11-07 18:57:58,072 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:57:58,083 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:57:58,085 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
-2020-11-07 18:57:58,085 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:57:58,106 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
-2020-11-07 18:57:58,117 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#e974ac2:0/SimpleConnection@653c51e0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58939]
-2020-11-07 18:57:58,126 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
-2020-11-07 18:57:58,127 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:57:58,154 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.resVv6D0QBWYm6kJpdaIQQ, bound to: springCloudBus
-2020-11-07 18:57:58,164 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.resVv6D0QBWYm6kJpdaIQQ.errors' has 1 subscriber(s).
-2020-11-07 18:57:58,199 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.resVv6D0QBWYm6kJpdaIQQ.errors' has 2 subscriber(s).
-2020-11-07 18:57:58,207 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.resVv6D0QBWYm6kJpdaIQQ'
-2020-11-07 18:57:58,207 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:57:58,210 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
-2020-11-07 18:57:59,019 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
-2020-11-07 18:57:59,020 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
-2020-11-07 18:57:59,047 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
-2020-11-07 18:57:59,079 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:57:59,081 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:57:59,105 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppointmentapiApplication in 10.062 seconds (JVM running for 182.609)
-2020-11-07 18:57:59,108 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2020-11-07 18:58:34,224 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-20] Waiting for workers to finish.
-2020-11-07 18:58:34,518 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-20] Successfully waited for workers to finish.
-2020-11-07 18:58:34,518 INFO o.s.i.e.AbstractEndpoint [Thread-20] stopped bean 'inbound.springCloudBus.anonymous.resVv6D0QBWYm6kJpdaIQQ'
-2020-11-07 18:58:34,521 INFO o.s.i.c.AbstractSubscribableChannel [Thread-20] Channel 'dbsecret-1.springCloudBus.anonymous.resVv6D0QBWYm6kJpdaIQQ.errors' has 1 subscriber(s).
-2020-11-07 18:58:34,522 INFO o.s.i.c.AbstractSubscribableChannel [Thread-20] Channel 'dbsecret-1.springCloudBus.anonymous.resVv6D0QBWYm6kJpdaIQQ.errors' has 0 subscriber(s).
-2020-11-07 18:58:34,524 INFO o.s.i.e.EventDrivenConsumer [Thread-20] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:58:34,525 INFO o.s.i.c.AbstractSubscribableChannel [Thread-20] Channel 'dbsecret-1.errorChannel' has 0 subscriber(s).
-2020-11-07 18:58:34,525 INFO o.s.i.e.AbstractEndpoint [Thread-20] stopped bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:58:34,537 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-20] Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:58:34,538 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-20] Shutting down ExecutorService 'taskScheduler'
-2020-11-07 18:58:34,539 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-20] Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:58:34,539 INFO c.z.h.HikariDataSource [Thread-20] HikariPool-3 - Shutdown initiated...
-2020-11-07 18:58:34,547 INFO c.z.h.HikariDataSource [Thread-20] HikariPool-3 - Shutdown completed.
-2020-11-07 18:58:34,549 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-20] Shutting down ExecutorService
-2020-11-07 18:58:35,625 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
-2020-11-07 18:58:36,537 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:58:36,564 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:58:36,575 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:58:36,576 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:58:36,578 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:58:38,512 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=APPOINTMENT-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:58:38,513 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
-2020-11-07 18:58:38,514 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
-2020-11-07 18:58:38,931 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-07 18:58:38,940 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8ms. Found 1 JPA repository interfaces.
-2020-11-07 18:58:38,980 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=b3f7d390-41d0-30f5-97db-79ab05fcedc0
-2020-11-07 18:58:38,985 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-11-07 18:58:38,985 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-11-07 18:58:38,987 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-11-07 18:58:39,006 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:58:39,007 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:58:39,013 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:58:39,161 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
-2020-11-07 18:58:39,161 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:58:39,162 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2020-11-07 18:58:39,162 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-07 18:58:39,187 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-11-07 18:58:39,187 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 671 ms
-2020-11-07 18:58:39,267 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
-2020-11-07 18:58:39,267 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
-2020-11-07 18:58:39,268 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
-2020-11-07 18:58:39,299 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:58:39,303 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
-2020-11-07 18:58:39,308 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-07 18:58:39,312 INFO c.z.h.HikariDataSource [task-1] HikariPool-4 - Starting...
-2020-11-07 18:58:39,319 INFO c.z.h.HikariDataSource [task-1] HikariPool-4 - Start completed.
-2020-11-07 18:58:39,320 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-11-07 18:58:39,358 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-07 18:58:39,359 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:58:39,403 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
-2020-11-07 18:58:39,497 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-07 18:58:39,754 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
-2020-11-07 18:58:39,791 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2020-11-07 18:58:39,880 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
-2020-11-07 18:58:40,656 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
-2020-11-07 18:58:40,683 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:58:40,683 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
-2020-11-07 18:58:40,683 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:58:40,684 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
-2020-11-07 18:58:41,519 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:58:41,531 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:58:41,536 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:58:41,537 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:58:41,542 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:58:43,361 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:58:43,361 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
-2020-11-07 18:58:43,388 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:58:43,401 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:58:43,403 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
-2020-11-07 18:58:43,403 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:58:43,434 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
-2020-11-07 18:58:43,447 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#7208fa65:0/SimpleConnection@252cd22b [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58959]
-2020-11-07 18:58:43,454 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
-2020-11-07 18:58:43,454 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:58:43,483 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.Uks4CZkzR-a1slCqSFkMSg, bound to: springCloudBus
-2020-11-07 18:58:43,492 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.Uks4CZkzR-a1slCqSFkMSg.errors' has 1 subscriber(s).
-2020-11-07 18:58:43,492 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.Uks4CZkzR-a1slCqSFkMSg.errors' has 2 subscriber(s).
-2020-11-07 18:58:43,498 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.Uks4CZkzR-a1slCqSFkMSg'
-2020-11-07 18:58:43,499 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:58:43,502 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
-2020-11-07 18:58:44,217 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
-2020-11-07 18:58:44,218 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
-2020-11-07 18:58:44,233 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
-2020-11-07 18:58:44,253 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:58:44,254 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:58:44,269 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppointmentapiApplication in 9.43 seconds (JVM running for 227.774)
-2020-11-07 18:58:44,272 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2020-11-07 18:58:52,990 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-29] Waiting for workers to finish.
-2020-11-07 18:58:53,584 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-29] Successfully waited for workers to finish.
-2020-11-07 18:58:53,584 INFO o.s.i.e.AbstractEndpoint [Thread-29] stopped bean 'inbound.springCloudBus.anonymous.Uks4CZkzR-a1slCqSFkMSg'
-2020-11-07 18:58:53,586 INFO o.s.i.c.AbstractSubscribableChannel [Thread-29] Channel 'dbsecret-1.springCloudBus.anonymous.Uks4CZkzR-a1slCqSFkMSg.errors' has 1 subscriber(s).
-2020-11-07 18:58:53,587 INFO o.s.i.c.AbstractSubscribableChannel [Thread-29] Channel 'dbsecret-1.springCloudBus.anonymous.Uks4CZkzR-a1slCqSFkMSg.errors' has 0 subscriber(s).
-2020-11-07 18:58:53,590 INFO o.s.i.e.EventDrivenConsumer [Thread-29] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:58:53,591 INFO o.s.i.c.AbstractSubscribableChannel [Thread-29] Channel 'dbsecret-1.errorChannel' has 0 subscriber(s).
-2020-11-07 18:58:53,591 INFO o.s.i.e.AbstractEndpoint [Thread-29] stopped bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:58:53,599 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-29] Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:58:53,601 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-29] Shutting down ExecutorService 'taskScheduler'
-2020-11-07 18:58:53,602 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-29] Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:58:53,602 INFO c.z.h.HikariDataSource [Thread-29] HikariPool-4 - Shutdown initiated...
-2020-11-07 18:58:53,610 INFO c.z.h.HikariDataSource [Thread-29] HikariPool-4 - Shutdown completed.
-2020-11-07 18:58:53,611 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-29] Shutting down ExecutorService
-2020-11-07 18:58:54,771 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
-2020-11-07 18:58:55,549 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:58:55,570 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:58:55,580 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:58:55,580 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:58:55,582 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:58:57,348 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=APPOINTMENT-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:58:57,348 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
-2020-11-07 18:58:57,350 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
-2020-11-07 18:58:57,921 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-07 18:58:57,927 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 5ms. Found 1 JPA repository interfaces.
-2020-11-07 18:58:57,967 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=b3f7d390-41d0-30f5-97db-79ab05fcedc0
-2020-11-07 18:58:57,971 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-11-07 18:58:57,971 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-11-07 18:58:57,972 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-11-07 18:58:57,991 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:58:57,992 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:58:57,998 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 18:58:58,080 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
-2020-11-07 18:58:58,081 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:58:58,081 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2020-11-07 18:58:58,081 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-07 18:58:58,110 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-11-07 18:58:58,110 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 758 ms
-2020-11-07 18:58:58,196 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
-2020-11-07 18:58:58,196 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
-2020-11-07 18:58:58,196 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
-2020-11-07 18:58:58,231 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-07 18:58:58,234 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
-2020-11-07 18:58:58,238 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-07 18:58:58,243 INFO c.z.h.HikariDataSource [task-1] HikariPool-5 - Starting...
-2020-11-07 18:58:58,249 INFO c.z.h.HikariDataSource [task-1] HikariPool-5 - Start completed.
-2020-11-07 18:58:58,249 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-11-07 18:58:58,277 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-07 18:58:58,278 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 18:58:58,364 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-07 18:58:58,557 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
-2020-11-07 18:58:58,575 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
-2020-11-07 18:58:58,592 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2020-11-07 18:58:58,689 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
-2020-11-07 18:58:59,484 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
-2020-11-07 18:58:59,514 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 18:58:59,515 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
-2020-11-07 18:58:59,515 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
-2020-11-07 18:58:59,515 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
-2020-11-07 18:59:00,264 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 18:59:00,274 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 18:59:00,278 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 18:59:00,278 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 18:59:00,281 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 18:59:02,128 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 18:59:02,128 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
-2020-11-07 18:59:02,151 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:59:02,159 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:59:02,161 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
-2020-11-07 18:59:02,161 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:59:02,183 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
-2020-11-07 18:59:02,192 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#628e015d:0/SimpleConnection@6b5173c4 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58978]
-2020-11-07 18:59:02,199 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
-2020-11-07 18:59:02,199 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 18:59:02,220 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.bRZtcl1dSiuy1ExOrVloHw, bound to: springCloudBus
-2020-11-07 18:59:02,229 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.bRZtcl1dSiuy1ExOrVloHw.errors' has 1 subscriber(s).
-2020-11-07 18:59:02,435 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.bRZtcl1dSiuy1ExOrVloHw.errors' has 2 subscriber(s).
-2020-11-07 18:59:02,445 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.bRZtcl1dSiuy1ExOrVloHw'
-2020-11-07 18:59:02,445 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
-2020-11-07 18:59:02,448 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
-2020-11-07 18:59:03,242 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
-2020-11-07 18:59:03,243 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
-2020-11-07 18:59:03,252 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
-2020-11-07 18:59:03,273 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 18:59:03,274 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 18:59:03,291 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppointmentapiApplication in 9.296 seconds (JVM running for 246.796)
-2020-11-07 18:59:03,294 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2020-11-07 18:59:09,567 INFO o.a.j.l.DirectJDKLog [http-nio-7080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-07 18:59:09,567 INFO o.s.w.s.FrameworkServlet [http-nio-7080-exec-1] Initializing Servlet 'dispatcherServlet'
-2020-11-07 18:59:09,570 INFO o.s.w.s.FrameworkServlet [http-nio-7080-exec-1] Completed initialization in 3 ms
-2020-11-07 18:59:31,132 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] {"customerId":7,"name":{"firstName":"Parameswari","lastName":"Bala","middleName":""},"gender":"FEMALE","dob":"1980-11-06","email":"param@gmail.com","mobileNo":9952032862,"addresses":[{"addressId":7,"doorNo":"56","streetName":"Rajaji St","city":"Chennai","state":"Tamilnadu"}]}
-2020-11-07 18:59:31,707 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] {"employeeId":1,"name":{"firstName":"Shyam","lastName":"Sundar","middleName":""},"gender":"MALE","dob":"1991-11-06","email":"shyam@gmail.com","mobileNo":8056050425,"role":"RM","addresses":[{"addressId":1,"doorNo":"78","streetName":"Gandhi st","city":"Bangalore","state":"Karnataka"}]}
-2020-11-07 19:42:14,508 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-38] Waiting for workers to finish.
-2020-11-07 19:42:14,626 INFO o.s.a.r.l.SimpleMessageListenerContainer [Thread-38] Successfully waited for workers to finish.
-2020-11-07 19:42:14,626 INFO o.s.i.e.AbstractEndpoint [Thread-38] stopped bean 'inbound.springCloudBus.anonymous.bRZtcl1dSiuy1ExOrVloHw'
-2020-11-07 19:42:14,628 INFO o.s.i.c.AbstractSubscribableChannel [Thread-38] Channel 'dbsecret-1.springCloudBus.anonymous.bRZtcl1dSiuy1ExOrVloHw.errors' has 1 subscriber(s).
-2020-11-07 19:42:14,629 INFO o.s.i.c.AbstractSubscribableChannel [Thread-38] Channel 'dbsecret-1.springCloudBus.anonymous.bRZtcl1dSiuy1ExOrVloHw.errors' has 0 subscriber(s).
-2020-11-07 19:42:14,631 INFO o.s.i.e.EventDrivenConsumer [Thread-38] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 19:42:14,631 INFO o.s.i.c.AbstractSubscribableChannel [Thread-38] Channel 'dbsecret-1.errorChannel' has 0 subscriber(s).
-2020-11-07 19:42:14,631 INFO o.s.i.e.AbstractEndpoint [Thread-38] stopped bean '_org.springframework.integration.errorLogger'
-2020-11-07 19:42:14,636 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-38] Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 19:42:14,638 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-38] Shutting down ExecutorService 'taskScheduler'
-2020-11-07 19:42:14,638 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-38] Shutting down ExecutorService 'applicationTaskExecutor'
-2020-11-07 19:42:14,639 INFO c.z.h.HikariDataSource [Thread-38] HikariPool-5 - Shutdown initiated...
-2020-11-07 19:42:14,645 INFO c.z.h.HikariDataSource [Thread-38] HikariPool-5 - Shutdown completed.
-2020-11-07 19:42:14,649 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-38] Shutting down ExecutorService
-2020-11-07 19:42:16,437 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
-2020-11-07 19:42:17,370 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 19:42:17,396 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 19:42:17,407 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 19:42:17,407 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 19:42:17,410 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 19:42:19,429 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=APPOINTMENT-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 19:42:19,429 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
-2020-11-07 19:42:19,430 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
-2020-11-07 19:42:20,287 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-07 19:42:20,298 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10ms. Found 1 JPA repository interfaces.
-2020-11-07 19:42:20,358 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=b3f7d390-41d0-30f5-97db-79ab05fcedc0
-2020-11-07 19:42:20,369 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-11-07 19:42:20,369 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-11-07 19:42:20,371 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-11-07 19:42:20,399 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 19:42:20,401 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 19:42:20,410 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-07 19:42:20,614 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
-2020-11-07 19:42:20,614 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
-2020-11-07 19:42:20,614 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2020-11-07 19:42:20,614 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-07 19:42:20,639 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-11-07 19:42:20,639 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1205 ms
-2020-11-07 19:42:20,803 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
-2020-11-07 19:42:20,803 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
-2020-11-07 19:42:20,804 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
-2020-11-07 19:42:20,884 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-07 19:42:20,893 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
-2020-11-07 19:42:20,901 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-07 19:42:20,918 INFO c.z.h.HikariDataSource [task-1] HikariPool-6 - Starting...
-2020-11-07 19:42:20,927 INFO c.z.h.HikariDataSource [task-1] HikariPool-6 - Start completed.
-2020-11-07 19:42:20,928 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-11-07 19:42:21,006 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-07 19:42:21,006 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-07 19:42:21,176 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
-2020-11-07 19:42:21,218 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-07 19:42:21,548 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
-2020-11-07 19:42:21,597 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2020-11-07 19:42:21,711 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
-2020-11-07 19:42:22,550 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
-2020-11-07 19:42:22,582 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-11-07 19:42:22,582 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
-2020-11-07 19:42:22,582 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
-2020-11-07 19:42:22,583 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Creating binder: rabbit
-2020-11-07 19:42:23,382 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
-2020-11-07 19:42:23,399 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
-2020-11-07 19:42:23,403 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
-2020-11-07 19:42:23,403 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
-2020-11-07 19:42:23,407 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
-2020-11-07 19:42:25,285 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=c749b0a35e9aa128776daab977dcc7ae50518a3f, state=null
-2020-11-07 19:42:25,285 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
-2020-11-07 19:42:25,309 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 19:42:25,324 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 19:42:25,325 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Caching the binder: rabbit
-2020-11-07 19:42:25,325 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 19:42:25,369 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
-2020-11-07 19:42:25,387 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#37fd94ca:0/SimpleConnection@4e9e7e49 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59872]
-2020-11-07 19:42:25,397 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
-2020-11-07 19:42:25,398 INFO o.s.c.s.b.DefaultBinderFactory [restartedMain] Retrieving cached binder: rabbit
-2020-11-07 19:42:25,445 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.mKKAQBdcS22ZMKmrKnEwbA, bound to: springCloudBus
-2020-11-07 19:42:25,455 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.mKKAQBdcS22ZMKmrKnEwbA.errors' has 1 subscriber(s).
-2020-11-07 19:42:25,456 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.mKKAQBdcS22ZMKmrKnEwbA.errors' has 2 subscriber(s).
-2020-11-07 19:42:25,463 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.mKKAQBdcS22ZMKmrKnEwbA'
-2020-11-07 19:42:25,464 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
-2020-11-07 19:42:25,468 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
-2020-11-07 19:42:26,268 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
-2020-11-07 19:42:26,269 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
-2020-11-07 19:42:26,296 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
-2020-11-07 19:42:26,336 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
-2020-11-07 19:42:26,337 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
-2020-11-07 19:42:26,369 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppointmentapiApplication in 11.124 seconds (JVM running for 2849.874)
-2020-11-07 19:42:26,374 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2020-11-07 19:45:03,296 INFO o.a.j.l.DirectJDKLog [http-nio-7080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-07 19:45:03,297 INFO o.s.w.s.FrameworkServlet [http-nio-7080-exec-2] Initializing Servlet 'dispatcherServlet'
-2020-11-07 19:45:03,300 INFO o.s.w.s.FrameworkServlet [http-nio-7080-exec-2] Completed initialization in 3 ms
-2020-11-07 19:45:03,388 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-2] {"customerId":7,"name":{"firstName":"Parameswari","lastName":"Bala","middleName":""},"gender":"FEMALE","dob":"1980-11-06","email":"param@gmail.com","mobileNo":9952032862,"addresses":[{"addressId":7,"doorNo":"56","streetName":"Rajaji St","city":"Chennai","state":"Tamilnadu"}]}
-2020-11-07 19:45:03,486 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-2] {"employeeId":1,"name":{"firstName":"Shyam","lastName":"Sundar","middleName":""},"gender":"MALE","dob":"1991-11-06","email":"shyam@gmail.com","mobileNo":8056050425,"role":"RM","addresses":[{"addressId":1,"doorNo":"78","streetName":"Gandhi st","city":"Bangalore","state":"Karnataka"}]}
-2020-11-07 19:49:56,036 ERROR c.v.b.e.CustomResponseErrorHandler [http-nio-7080-exec-5] URL: http://localhost:7070/customers/71, HttpMethod: GET, ResponseBody: {"message":"INCORRECT_REQUEST","details":["Invalid customer id : 71"]}
+2020-11-10 21:32:28,051 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-11-10 21:32:28,207 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-10 21:32:30,101 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2020-11-10 21:32:31,461 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
+2020-11-10 21:32:31,524 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
+2020-11-10 21:32:31,537 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
+2020-11-10 21:32:31,539 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
+2020-11-10 21:32:31,546 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-11-10 21:32:33,672 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=APPOINTMENT-SERVICE,bank-app-common,bank-app, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-10 21:32:33,672 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-dev.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eswaribala/virtusaconfigrepo2020.git/bank-app-common.properties'}]
+2020-11-10 21:32:33,678 INFO o.s.b.SpringApplication [restartedMain] The following profiles are active: dev
+2020-11-10 21:32:35,215 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+2020-11-10 21:32:35,689 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-10 21:32:36,086 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 386ms. Found 1 JPA repository interfaces.
+2020-11-10 21:32:36,272 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+2020-11-10 21:32:36,329 WARN o.s.b.a.e.EndpointId [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-11-10 21:32:36,636 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=a5b12962-2409-3b4d-b0a0-6c8a8ba8fdf9
+2020-11-10 21:32:36,657 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-11-10 21:32:36,667 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-11-10 21:32:36,677 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [restartedMain] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-11-10 21:32:37,235 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-10 21:32:37,242 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-10 21:32:37,290 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-10 21:32:38,368 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
+2020-11-10 21:32:38,381 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
+2020-11-10 21:32:38,382 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-11-10 21:32:38,382 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-10 21:32:38,557 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-11-10 21:32:38,557 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4853 ms
+2020-11-10 21:32:38,818 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-11-10 21:32:38,819 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-10 21:32:38,856 INFO c.n.c.DynamicPropertyFactory [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5f9c3ce1
+2020-11-10 21:32:39,177 INFO o.s.b.a.e.w.ServletEndpointRegistrar [restartedMain] Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-11-10 21:32:39,279 INFO c.v.b.c.DbConfiguration [restartedMain] Message from Property filemessage from dev with refresh scope and refresh, cloud bus activated
+2020-11-10 21:32:39,279 INFO c.v.b.c.DbConfiguration [restartedMain] User Name...root
+2020-11-10 21:32:39,280 INFO c.v.b.c.DbConfiguration [restartedMain] Password...vignesh
+2020-11-10 21:32:39,475 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-10 21:32:39,540 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'taskScheduler'
+2020-11-10 21:32:39,627 INFO o.h.j.i.u.LogHelper [task-1] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-10 21:32:39,923 INFO o.h.Version [task-1] HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-10 21:32:40,144 INFO o.h.a.c.r.j.JavaReflectionManager [task-1] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-10 21:32:40,338 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Starting...
+2020-11-10 21:32:40,642 INFO c.z.h.HikariDataSource [task-1] HikariPool-1 - Start completed.
+2020-11-10 21:32:40,668 INFO o.h.d.Dialect [task-1] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-10 21:32:40,698 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 21:32:41,586 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [task-1] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-10 21:32:41,596 INFO o.s.o.j.AbstractEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-10 21:32:43,280 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 22 endpoint(s) beneath base path '/actuator'
+2020-11-10 21:32:43,442 WARN o.s.b.d.a.OptionalLiveReloadServer [task-2] Unable to start LiveReload server
+2020-11-10 21:32:43,799 INFO s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2020-11-10 21:32:44,038 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-11-10 21:32:44,038 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-10 21:32:45,057 INFO o.s.c.s.f.FunctionConfiguration$FunctionBindingRegistrar [restartedMain] Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-11-10 21:32:46,811 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusInput' has 1 subscriber(s).
+2020-11-10 21:32:46,887 INFO o.s.i.e.EventDrivenConsumer [restartedMain] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-11-10 21:32:46,887 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.errorChannel' has 1 subscriber(s).
+2020-11-10 21:32:46,887 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean '_org.springframework.integration.errorLogger'
+2020-11-10 21:32:47,956 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/dbsecret/dev] not resolvable: Not found
+2020-11-10 21:32:47,973 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application/dev] not resolvable: Not found
+2020-11-10 21:32:47,979 INFO o.s.v.c.e.LeaseAwareVaultPropertySource [restartedMain] Vault location [secret/application] not resolvable: Not found
+2020-11-10 21:32:47,980 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/dbsecret'}, BootstrapPropertySource {name='bootstrapProperties-secret/application/dev'}, BootstrapPropertySource {name='bootstrapProperties-secret/application'}]
+2020-11-10 21:32:47,988 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-11-10 21:32:51,488 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=dbsecret, profiles=[dev], label=null, version=791f0ded75ecb4ba3492a44950975f360b35c552, state=null
+2020-11-10 21:32:51,488 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+2020-11-10 21:32:51,624 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-11-10 21:32:51,689 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-11-10 21:32:51,765 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Attempting to connect to: [localhost:5672]
+2020-11-10 21:32:51,873 INFO o.s.a.r.c.AbstractConnectionFactory [restartedMain] Created new connection: rabbitConnectionFactory#1dc9ce6:0/SimpleConnection@21d86ad2 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 63527]
+2020-11-10 21:32:51,922 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'dbsecret-1.springCloudBusOutput' has 1 subscriber(s).
+2020-11-10 21:32:51,975 INFO o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner [restartedMain] declaring queue for inbound: springCloudBus.anonymous.5eBUEA-XRdKwBboiZIlhjA, bound to: springCloudBus
+2020-11-10 21:32:52,012 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.5eBUEA-XRdKwBboiZIlhjA.errors' has 1 subscriber(s).
+2020-11-10 21:32:52,012 INFO o.s.i.c.AbstractSubscribableChannel [restartedMain] Channel 'springCloudBus.anonymous.5eBUEA-XRdKwBboiZIlhjA.errors' has 2 subscriber(s).
+2020-11-10 21:32:52,042 INFO o.s.i.e.AbstractEndpoint [restartedMain] started bean 'inbound.springCloudBus.anonymous.5eBUEA-XRdKwBboiZIlhjA'
+2020-11-10 21:32:52,044 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
+2020-11-10 21:32:52,079 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
+2020-11-10 21:32:53,046 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Documentation plugins bootstrapped
+2020-11-10 21:32:53,050 INFO s.d.s.w.p.AbstractDocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-11-10 21:32:53,127 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-11-10 21:32:53,267 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Triggering deferred initialization of Spring Data repositories…
+2020-11-10 21:32:53,268 INFO o.s.d.r.c.DeferredRepositoryInitializationListener [restartedMain] Spring Data repositories initialized!
+2020-11-10 21:32:53,422 INFO o.s.b.StartupInfoLogger [restartedMain] Started AppointmentapiApplication in 26.881 seconds (JVM running for 27.959)
+2020-11-10 21:33:06,701 INFO o.a.j.l.DirectJDKLog [http-nio-7080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-10 21:33:06,702 INFO o.s.w.s.FrameworkServlet [http-nio-7080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-11-10 21:33:06,743 INFO o.s.w.s.FrameworkServlet [http-nio-7080-exec-1] Completed initialization in 40 ms
+2020-11-10 21:33:08,767 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-8] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:33:08,768 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-9] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:33:12,346 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] {"customerId":7,"name":{"firstName":"Parameswari","lastName":"Bala","middleName":""},"gender":"FEMALE","dob":"1980-11-06","email":"param@gmail.com","mobileNo":9952032862,"addresses":[{"addressId":7,"doorNo":"56","streetName":"Rajaji St","city":"Chennai","state":"Tamilnadu"}]}
+2020-11-10 21:33:12,364 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] Customer Statustrue
+2020-11-10 21:33:12,853 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] {"employeeId":1,"name":{"firstName":"Shyam","lastName":"Sundar","middleName":""},"gender":"MALE","dob":"1991-11-06","email":"shyam@gmail.com","mobileNo":8056050425,"role":"RM","addresses":[{"addressId":1,"doorNo":"78","streetName":"Gandhi st","city":"Bangalore","state":"Karnataka"}]}
+2020-11-10 21:33:12,855 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] RM Statustrue
+2020-11-10 21:35:58,524 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-5] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:35:58,524 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-9] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:35:59,053 ERROR o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-5] Error proxying request: http://localhost:7080/actuator/hystrix.stream
+org.apache.http.MalformedChunkCodingException: Bad chunk header: HTTP/1.1 200
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:274) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:118) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardConfiguration$ProxyStreamServlet.doGet(HystrixDashboardConfiguration.java:194) [spring-cloud-netflix-hystrix-dashboard-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 21:36:01,413 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-1] {"customerId":7,"name":{"firstName":"Parameswari","lastName":"Bala","middleName":""},"gender":"FEMALE","dob":"1980-11-06","email":"param@gmail.com","mobileNo":9952032862,"addresses":[{"addressId":7,"doorNo":"56","streetName":"Rajaji St","city":"Chennai","state":"Tamilnadu"}]}
+2020-11-10 21:36:01,414 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-1] Customer Statustrue
+2020-11-10 21:36:01,442 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-1] {"employeeId":1,"name":{"firstName":"Shyam","lastName":"Sundar","middleName":""},"gender":"MALE","dob":"1991-11-06","email":"shyam@gmail.com","mobileNo":8056050425,"role":"RM","addresses":[{"addressId":1,"doorNo":"78","streetName":"Gandhi st","city":"Bangalore","state":"Karnataka"}]}
+2020-11-10 21:36:01,443 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-1] RM Statustrue
+2020-11-10 21:36:02,093 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-4] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:36:21,534 ERROR o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-4] Error proxying request: http://localhost:7080/actuator/hystrix.stream
+org.apache.http.MalformedChunkCodingException: Unexpected content at the end of chunk
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:254) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:118) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardConfiguration$ProxyStreamServlet.doGet(HystrixDashboardConfiguration.java:194) [spring-cloud-netflix-hystrix-dashboard-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 21:36:24,566 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-2] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:37:08,785 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-5] {"customerId":7,"name":{"firstName":"Parameswari","lastName":"Bala","middleName":""},"gender":"FEMALE","dob":"1980-11-06","email":"param@gmail.com","mobileNo":9952032862,"addresses":[{"addressId":7,"doorNo":"56","streetName":"Rajaji St","city":"Chennai","state":"Tamilnadu"}]}
+2020-11-10 21:37:08,785 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-5] Customer Statustrue
+2020-11-10 21:37:08,800 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-5] {"employeeId":1,"name":{"firstName":"Shyam","lastName":"Sundar","middleName":""},"gender":"MALE","dob":"1991-11-06","email":"shyam@gmail.com","mobileNo":8056050425,"role":"RM","addresses":[{"addressId":1,"doorNo":"78","streetName":"Gandhi st","city":"Bangalore","state":"Karnataka"}]}
+2020-11-10 21:37:08,801 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-5] RM Statustrue
+2020-11-10 21:40:05,041 ERROR o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-9] Error proxying request: http://localhost:7080/actuator/hystrix.stream
+org.apache.http.MalformedChunkCodingException: Bad chunk header: data: {"type":"HystrixThreadPool","name":"Test","currentTime":1605024605037,"currentActiveCount":0,"currentCompletedTaskCount":3,"crOpen":false,"errorPercentage":0,"errorCount":0,"requestCount":0,"rollingCountBadRequests":0,"rollingCountCollapsedRequests":0,"rollingCountEmit":0,"rollingCountExceptionsThrown":0,"rollingCountFailure":0,"rollingCountFallbackEmit":0,"rollingCountFallbackFailure":0,"rollingCountFallbackMissing":0,"rollingCountFallbackRejection":0,"rollingCountFallbackSuccess":0,"rollingCountResponsesFromCache":0,"rollingCountSemaphoreRejected":0,"rollingCountShortCircuited":0,"rollingCountSuccess":0,"rollingCountThreadPoolRejected":0,"rollingCountTimeout":0,"currentConcurrentExecutionCount":0,"rollingMaxConcurrentExecutionCount":0,"latencyExecute_mean":0,"latencyExecute":{"0":0,"25":0,"50":0,"75":0,"90":0,"95":0,"99":0,"99.5":0,"100":0},"latencyTotal_mean":0,"latencyTotal":{"0":0,"25":0,"50":0,"75":0,"90":0,"95":0,"99":0,"99.5":0,"100":0},"propertyValue_circuitBreakerRequestVolumeThreshold":20,"propertyValue_circuitBreakerSleepWindowInMilliseconds":5000,"propertyValue_circuitBreakerErrorThresholdPercentage":50,"propertyValue_circuitBreakerForceOpen":false,"propertyValue_circuitBreakerForceClosed":false,"propertyValue_circuitBreakerEnabled":true,"propertyValue_executionIsolationStrategy":"THREAD","propertyValue_executionIsolationThreadTimeoutInMilliseconds":110,"propertyValue_executionTimeoutInMilliseconds":110,"propertyValue_executionIsolationThreadInterruptOnTimeout":false,"propertyValue_executionIsolationThreadPoolKeyOverride":null,"propertyValue_executionIsolationSemaphoreMaxConcurrentRequests":10,"propertyValue_fallbackIsolationSemaphoreMaxConcurrentRequests":10,"propertyValue_metricsRollingStatisticalWindowInMilliseconds":10000,"propertyValue_requestCacheEnabled":true,"propertyValue_requestLogEnabled":true,"reportingHosts":1,"threadPool":"Test"}
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:274) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:118) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardConfiguration$ProxyStreamServlet.doGet(HystrixDashboardConfiguration.java:194) [spring-cloud-netflix-hystrix-dashboard-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 21:40:08,155 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-6] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:40:41,926 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-7] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:40:41,934 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-4] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:40:42,455 ERROR o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-7] Error proxying request: http://localhost:7080/actuator/hystrix.stream
+org.apache.http.MalformedChunkCodingException: Bad chunk header: HTTP/1.1 200
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:274) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:118) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardConfiguration$ProxyStreamServlet.doGet(HystrixDashboardConfiguration.java:194) [spring-cloud-netflix-hystrix-dashboard-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 21:40:45,633 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-8] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:42:28,948 ERROR o.a.j.l.DirectJDKLog [http-nio-7080-exec-10] Servlet.service() for servlet [hystrix.stream-actuator-endpoint] in context with path [] threw exception
+java.nio.BufferOverflowException: null
+	at java.nio.DirectByteBuffer.put(DirectByteBuffer.java:363) ~[?:1.8.0_152]
+	at java.nio.DirectByteBuffer.put(DirectByteBuffer.java:342) ~[?:1.8.0_152]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:60) ~[?:1.8.0_152]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471) ~[?:1.8.0_152]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1253) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:717) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:707) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:572) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1195) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:399) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.Response.action(Response.java:209) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:272) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteWriter.flush(CoyoteWriter.java:94) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteWriter.checkError(CoyoteWriter.java:119) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at com.netflix.hystrix.contrib.sample.stream.HystrixSampleSseServlet.handleRequest(HystrixSampleSseServlet.java:165) ~[hystrix-metrics-event-stream-1.5.18.jar:1.5.18]
+	at com.netflix.hystrix.contrib.sample.stream.HystrixSampleSseServlet.doGet(HystrixSampleSseServlet.java:74) ~[hystrix-metrics-event-stream-1.5.18.jar:1.5.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 21:42:28,965 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-7080-exec-10] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'text/event-stream;charset=UTF-8']
+2020-11-10 21:42:32,068 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-7] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 21:50:46,449 ERROR o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-8] Error proxying request: http://localhost:7080/actuator/hystrix.stream
+org.apache.http.MalformedChunkCodingException: Bad chunk header: type":"HystrixThreadPool","name":"Test","currentTime":1605025246440,"currentActiveCount":0,"currentCompletedTaskCount":3,"currentCorePoolSize":30,"currentLargestPoolSize":3,"currentMaximumPoolSize":30,"currentPoolSize":3,"currentQueueSize":0,"currentTaskCount":3,"rollingCountThreadsExecuted":0,"rollingMaxActiveThreads":0,"rollingCountCommandRejections":0,"propertyValue_queueSizeRejectionThreshold":15,"propertyValue_metricsRollingStatisticalWindowInMilliseconds":1440,"reportingHosts":1}
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:274) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:118) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardConfiguration$ProxyStreamServlet.doGet(HystrixDashboardConfiguration.java:194) [spring-cloud-netflix-hystrix-dashboard-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 21:50:49,536 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-1] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 22:01:27,476 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-3] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 22:01:27,477 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-10] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 22:01:29,995 ERROR o.a.j.l.DirectJDKLog [http-nio-7080-exec-2] Servlet.service() for servlet [hystrix.stream-actuator-endpoint] in context with path [] threw exception
+java.nio.BufferOverflowException: null
+	at java.nio.Buffer.nextPutIndex(Buffer.java:521) ~[?:1.8.0_152]
+	at java.nio.HeapCharBuffer.put(HeapCharBuffer.java:169) ~[?:1.8.0_152]
+	at java.nio.CharBuffer.put(CharBuffer.java:924) ~[?:1.8.0_152]
+	at org.apache.catalina.connector.OutputBuffer.transfer(OutputBuffer.java:821) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:526) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteWriter.write(CoyoteWriter.java:170) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteWriter.write(CoyoteWriter.java:180) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteWriter.print(CoyoteWriter.java:238) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at com.netflix.hystrix.contrib.sample.stream.HystrixSampleSseServlet.handleRequest(HystrixSampleSseServlet.java:163) ~[hystrix-metrics-event-stream-1.5.18.jar:1.5.18]
+	at com.netflix.hystrix.contrib.sample.stream.HystrixSampleSseServlet.doGet(HystrixSampleSseServlet.java:74) ~[hystrix-metrics-event-stream-1.5.18.jar:1.5.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 22:01:30,007 ERROR o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-3] Error proxying request: http://localhost:7080/actuator/hystrix.stream
+org.apache.http.TruncatedChunkException: Truncated chunk (expected size: 8,192; actual size: 8,186)
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:197) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:210) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.close(ChunkedInputStream.java:312) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.conn.BasicManagedEntity.eofDetected(BasicManagedEntity.java:145) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.conn.EofSensorInputStream.checkEOF(EofSensorInputStream.java:199) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:119) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardConfiguration$ProxyStreamServlet.doGet(HystrixDashboardConfiguration.java:194) [spring-cloud-netflix-hystrix-dashboard-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 22:01:31,061 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-5] {"customerId":7,"name":{"firstName":"Parameswari","lastName":"Bala","middleName":""},"gender":"FEMALE","dob":"1980-11-06","email":"param@gmail.com","mobileNo":9952032862,"addresses":[{"addressId":7,"doorNo":"56","streetName":"Rajaji St","city":"Chennai","state":"Tamilnadu"}]}
+2020-11-10 22:01:31,062 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-5] Customer Statustrue
+2020-11-10 22:01:31,087 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-5] {"employeeId":1,"name":{"firstName":"Shyam","lastName":"Sundar","middleName":""},"gender":"MALE","dob":"1991-11-06","email":"shyam@gmail.com","mobileNo":8056050425,"role":"RM","addresses":[{"addressId":1,"doorNo":"78","streetName":"Gandhi st","city":"Bangalore","state":"Karnataka"}]}
+2020-11-10 22:01:31,088 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-5] RM Statustrue
+2020-11-10 22:01:33,108 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-8] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 22:03:49,804 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-8] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 22:03:49,806 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-4] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 22:03:50,319 ERROR o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-8] Error proxying request: http://localhost:7080/actuator/hystrix.stream
+org.apache.http.MalformedChunkCodingException: Bad chunk header: HTTP/1.1 200
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:274) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:118) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardConfiguration$ProxyStreamServlet.doGet(HystrixDashboardConfiguration.java:194) [spring-cloud-netflix-hystrix-dashboard-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 22:03:50,322 ERROR o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-4] Error proxying request: http://localhost:7080/actuator/hystrix.stream
+org.apache.http.MalformedChunkCodingException: Bad chunk header: Tue, 10 Nov 2020 16:33:50 GMT
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:274) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:222) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:147) ~[httpcore-4.4.13.jar:4.4.13]
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:118) ~[httpclient-4.5.13.jar:4.5.13]
+	at org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardConfiguration$ProxyStreamServlet.doGet(HystrixDashboardConfiguration.java:194) [spring-cloud-netflix-hystrix-dashboard-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+2020-11-10 22:03:51,937 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-2] {"customerId":7,"name":{"firstName":"Parameswari","lastName":"Bala","middleName":""},"gender":"FEMALE","dob":"1980-11-06","email":"param@gmail.com","mobileNo":9952032862,"addresses":[{"addressId":7,"doorNo":"56","streetName":"Rajaji St","city":"Chennai","state":"Tamilnadu"}]}
+2020-11-10 22:03:51,938 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-2] Customer Statustrue
+2020-11-10 22:03:51,963 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-2] {"employeeId":1,"name":{"firstName":"Shyam","lastName":"Sundar","middleName":""},"gender":"MALE","dob":"1991-11-06","email":"shyam@gmail.com","mobileNo":8056050425,"role":"RM","addresses":[{"addressId":1,"doorNo":"78","streetName":"Gandhi st","city":"Bangalore","state":"Karnataka"}]}
+2020-11-10 22:03:51,964 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-2] RM Statustrue
+2020-11-10 22:03:53,394 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-9] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 22:03:53,405 INFO o.s.c.n.h.d.HystrixDashboardConfiguration$ProxyStreamServlet [http-nio-7080-exec-10] 
+
+Proxy opening connection to: http://localhost:7080/actuator/hystrix.stream
+
+
+2020-11-10 22:04:45,268 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] {"customerId":7,"name":{"firstName":"Parameswari","lastName":"Bala","middleName":""},"gender":"FEMALE","dob":"1980-11-06","email":"param@gmail.com","mobileNo":9952032862,"addresses":[{"addressId":7,"doorNo":"56","streetName":"Rajaji St","city":"Chennai","state":"Tamilnadu"}]}
+2020-11-10 22:04:45,269 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] Customer Statustrue
+2020-11-10 22:04:45,302 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] {"employeeId":1,"name":{"firstName":"Shyam","lastName":"Sundar","middleName":""},"gender":"MALE","dob":"1991-11-06","email":"shyam@gmail.com","mobileNo":8056050425,"role":"RM","addresses":[{"addressId":1,"doorNo":"78","streetName":"Gandhi st","city":"Bangalore","state":"Karnataka"}]}
+2020-11-10 22:04:45,303 INFO c.v.b.s.AppointmentService [http-nio-7080-exec-3] RM Statustrue

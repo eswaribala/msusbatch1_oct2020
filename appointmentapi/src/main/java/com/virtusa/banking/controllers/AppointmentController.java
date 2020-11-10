@@ -24,6 +24,7 @@ public class AppointmentController {
 	private AppointmentService appointmentService;
     //postmapping
     @PostMapping("/appointments")
+    
     @CrossOrigin("*")
     public ResponseEntity<?> addCustomer(@Valid @RequestBody Appointment appointment)
     {
