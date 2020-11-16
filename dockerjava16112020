@@ -16,7 +16,10 @@ docker exec -it virtusa-mysql mysql -u root -p
 #create the spring boot application docker image
 docker build -f dockerfile -t <imagename> .
 
-#create the spring boot application container
+#create the spring boot application first container
 
 docker run -p 6060:6060 --name virtusa-c1 --link virtusa-mysql:mysql -d rmapp:latest
 
+#create the spring boot application second container 
+
+docker run -p 6060:6060 --name virtusa-c1 --link virtusa-mysql:mysql -d rmapp:latest
