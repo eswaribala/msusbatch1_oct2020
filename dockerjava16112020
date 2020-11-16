@@ -1,0 +1,8 @@
+#to demonstrate zipkin pull
+
+docker run -d -p 9411:9411 openzipkin/zipkin
+
+
+#to create mysql container from mysql image 
+
+docker run --name virtusa-mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=virtusacustomerdb -e MYSQL_USER=demo_user -e MYSQL_PASSWORD=demo_pass -d mysql
