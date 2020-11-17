@@ -23,3 +23,12 @@ docker run -p 6060:6060 --name virtusa-c1 --link virtusa-mysql:mysql -d rmapp:la
 #create the spring boot application second container 
 
 docker run -p 6060:6060 --name virtusa-c1 --link virtusa-mysql:mysql -d rmapp:latest
+
+
+# push image to docker hub
+
+docker login
+
+docker tag rmapp:latest eswaribala/virtusausoct2020:v1
+
+docker push eswaribala/virtusausoct2020:v1
