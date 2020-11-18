@@ -27,9 +27,7 @@ go to powershell run the following cmd
 
 kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | sls admin-user | ForEach-Object { $_ -Split '\s+' } | Select -First 1)
 
-kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | sls eks-admin | ForEach-Object { $_ -Split '\s+' } | Select -First 1)
 
-kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
 
 token
 
