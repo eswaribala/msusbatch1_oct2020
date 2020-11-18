@@ -1,0 +1,47 @@
+kubectl cluster-info
+--------------------------------
+kubectl version
+---------------------------------------------
+
+kubectl config current-context
+---------------------------------------------
+kubectl cluster-info
+------------------------------------------------
+kubectl get nodes
+------------------------------------------------
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
+
+kubectl get all --all-namespaces
+
+kubectl get all -n kubernetes-dashboard
+
+
+
+goto g:\localdisk\docker
+
+kubectl apply -f  dashboard-adminuser.yaml
+
+kubectl apply -f admin-role-binding.yml
+
+go to powershell run the following cmd
+
+kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | sls admin-user | ForEach-Object { $_ -Split '\s+' } | Select -First 1)
+
+kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | sls eks-admin | ForEach-Object { $_ -Split '\s+' } | Select -First 1)
+
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
+
+token
+
+eyJhbGciOiJSUzI1NiIsImtpZCI6IlNfbmFnUmVianhFaXhsdmNXT3R4SVloSVUwbnFRdXVjZHdBODFvT1FLd28ifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuLTZucHBtIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIxY2FhNTNlZC04ZDEyLTQwNjQtYjQxZi1hZWIzYjY1NzI4NTUiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6YWRtaW4tdXNlciJ9.lXSsLljInIhS40MwUG8i0m_gp2uIfU6lNVipA9PDVaHUWeyylY7FAa8iLfrcUjvC4VtZhGBl88StWcorwu70TFXZW9sAkxKJr_gY6-FdvpqTY7wSbZXl1yexvkahMK37sMgYff6-H_4Lbw988ztdVTlMngfwtECK7fRLcQ3q-0L1PxWx1C1ODrhi8DUEHbiubVq0HZCs-nlIgDIVmXkgWmJt3RsqkWGTb-ociwkBem9gANtSUCbSvwdUaPehwjm_d8JWEGzAZAvuPK4OvPCp7eH1JZ2RcUEnj6YDBBkyAcDKR6xl1RWpemc6kKYYdXwOSpYwlNhHlFgsxn6n3esxxw
+
+-------------------------------------------------------
+
+
+===========================
+kubectl proxy
+Starting to serve on 127.0.0.1:8001
+http://localhost:8001
+======================================================
+
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
