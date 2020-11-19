@@ -70,5 +70,11 @@ kubectl run -it --rm --image=mysql --restart=Never mysql-client -- mysql -h mysq
 (don't change password it's ppassword)
 create database virtusausappointmentdb;
 show databases;
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl get services
+
+kubectl port-forward service/demo 8070:8070
+
 
 
