@@ -1,3 +1,8 @@
+#wsl integration with ubuntu
+wsl -l -v
+wsl --set-version <distribution name> <versionNumber>
+wsl --set-version  Ubuntu-20.04 2
+
 kubectl cluster-info
 --------------------------------
 kubectl version
