@@ -1,0 +1,50 @@
+Step: 1
+
+java -jar spring-cloud-dataflow-server-local-1.3.0.M1.jar
+
+Step: 2 
+
+java -jar spring-cloud-dataflow-shell-1.3.0.M1.jar
+
+Step: 3
+
+Start kafka/RMQ
+docker run -it --rm --name rabbitmq-c1 -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+
+Step DB Step
+
+mongod --dbpath=<any path folder name>
+
+mongo client
+
+Step: 4
+
+MarketData API---> MarketData Processor API-> MarketSink API
+
+Build MarketData API
+
+app register --name marketdatasource-app --type source --uri file:///F:/boainter2020/marketdata/target/marketdata-0.0.1-SNAPSHOT.jar
+
+Step: 5
+
+Build MarketData Processor API
+
+app register --name marketdataprocessor-app --type processor --uri file:///F:/boainter2020/marketdataprocessor/target/marketdataprocessor-0.0.1-SNAPSHOT.jar
+
+
+Step:6
+Build  MarketSink API
+
+app register --name marketdatasink-app --type sink --uri file:///F:/boainter2020/marketdatasink/target/marketdatasink-0.0.1-SNAPSHOT.jar
+
+
+Step 7
+
+stream create --name market-data-log --definition 'marketdatasource-app | marketdataprocessor-app | marketdatasink-app'
+
+
+Step 8
+stream deploy --name market-data-log
+
+
+
