@@ -1,0 +1,13 @@
+1.Configure Rabbitmq
+2.Ensure Running http://localhost:15672
+3.Configure Zookeeper
+4.From CLI run zkserver should be available in 2181
+5.Configure Kafka Server
+6.Default kafka server running 9092
+7.Ensure kafka working by creating topic and Listing
+8.Run java -jar <Spring Cloud Data Flow Server>
+9.Run java -jat <Spring cloud Data Flow Shell>
+10.Download Mongodb Community Server and unzip
+11.Create empty folder
+12.from CLI mongod --dbpath=<Path>
+13.from CLI mongo  
