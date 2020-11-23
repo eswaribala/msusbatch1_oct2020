@@ -14,9 +14,13 @@ public class UpdatedIRMessageListener {
 	
   
     @StreamListener(target = UpdatedIRSink.input)
-    public void listenForUpdatedIRMessage(UpdatedIRMessage updatedIRMessage)
+    public void listenForUpdatedIRMessage(UpdatedIRMessage updatedIRMessage) throws Exception
     {
-      log.info(updatedIRMessage.toString());
+    	
+    	if(updatedIRMessage.getNewInterestRate()<=0)
+    		throw new Exception("Interest Rate cannot be zero or less than that");
+      
+    	log.info(updatedIRMessage.toString());
     }
 
 
