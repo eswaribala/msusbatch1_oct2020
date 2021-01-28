@@ -25,3 +25,4 @@ mutation{
 http://localhost:6060/graphql/schema.json
 http://localhost:6060/graphql?query=%7BfindAllCustomers%7BcustomerId%7D%7D
 http://localhost:6060/graphql?query=%7BfindAllCustomers%7BcustomerId%20name%7D%7D
+
