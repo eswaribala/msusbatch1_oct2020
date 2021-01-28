@@ -1,0 +1,24 @@
+mutation{
+ createCustomer(input:{
+  customerId: 21,
+  name: {
+    firstName: "Vignesh",
+    lastName: "BalaS",
+    middleName: " "
+  },
+  email: "vignesh@gmail.com",
+  gender: "MALE",
+  dob: "1995-12-07",
+  addresses:[{
+    addressId: 11,
+      doorNo: "65D",
+      street: "First St",
+      city: "Chennai",
+      state: "TN"
+  }]
+  
+  
+}){
+  name
+}
+}
