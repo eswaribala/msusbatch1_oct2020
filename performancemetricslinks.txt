@@ -1,0 +1,10 @@
+https://grafana.com/grafana/download?platform=windows
+
+https://zipkin.io/pages/quickstart
+
+
+https://prometheus.io/download/
+
+https://grafana.com/grafana/download?platform=windows
+
+https://zipkin.io/pages/quickstart
