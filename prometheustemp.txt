@@ -1,0 +1,21 @@
+<dependency>
+		    <groupId>io.micrometer</groupId>
+		    <artifactId>micrometer-registry-prometheus</artifactId>
+		</dependency>
+    
+    
+   management.endpoints.web.exposure.include=*
+management.endpoint.health.show-details=always
+
+
+#add the following in prometheus yaml
+- job_name: 'spring-boot-app'
+
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+
+    metrics_path: 'actuator/prometheus'
+    # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ['localhost:6060']
