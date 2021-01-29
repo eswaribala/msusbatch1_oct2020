@@ -19,3 +19,11 @@ management.endpoint.health.show-details=always
 
     static_configs:
       - targets: ['localhost:6060']
+      
+      
+  #to start prometheus 
+  
+  prometheus.exe  --config.file="prometheus.yml" --web.listen-address=:9092
+
+
+
