@@ -1,0 +1,39 @@
+<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-sleuth</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-zipkin</artifactId>
+			</dependency>
+      
+      
+      @RestController
+class ZipkinController{
+	
+	@Autowired
+	RestTemplate restTemplate;
+	
+	@Bean
+	public Sampler alwaysSampler() {
+		return new Sampler() {
+
+			@Override
+			public boolean isSampled(long traceId) {
+				// TODO Auto-generated method stub
+				return true;
+			}
+			
+		};
+	}
+	private static final Logger LOG = Logger.getLogger(ZipkinController.class.getName());
+	
+	@GetMapping(value="/zipkin")
+	public String zipkinService1() {
+		LOG.info("Inside zipkinService 1..");
+		
+		 String response = (String) restTemplate.exchange("http://localhost:8082/zipkin2", HttpMethod.GET, null, new ParameterizedTypeReference<String>() {
+	        }).getBody();
+		return "Hi...";
+	}
+}
