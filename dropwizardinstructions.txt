@@ -1,3 +1,4 @@
+mongod --dbpath="F:\virtusausoct12020"
 $ mongo
 $ use donuts
 > db.createUser({ user: "user_donuts", pwd: "pAsw0Rd", roles: [ { role: "readWrite", db: "donuts"} ]});
